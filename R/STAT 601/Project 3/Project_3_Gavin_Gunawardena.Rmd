@@ -1,0 +1,532 @@
+---
+title: "Project 3.0"
+author: "Gavin Gunawardena"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Background
+
+Over the summer I was supporting a chemist who was developing a method using LC-MS/MS (see <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3052391/> for background on liquid chromatography-tandem mass spectrometry (LC-MS/MS).) to analyze the chemical make up of various brands of aspirin.
+
+At the current stage of development we are simply interested in whether or not there is a difference between the three different brands of aspirin that we have analyzed to date.
+
+We have the following data set- for each of seven peaks.
+
+-   Three pills from three different brands of aspirin. ( Bayer, PV. and Wall)
+
+-   Each Pill has been analyzed in triplicate- this means that we measured the same pill three times for one peak.
+
+We want to know if there is a difference between the the three brands of pills for each peak.
+
+Please see the accompanying video where I will describe the data set and what we want you to look at.
+
+## Project
+
+Analyze the corresponding data sets and give an appropriate data analysis
+
+### Objective
+
+  The objective of this project is to take the 63 tab separated text files of aspirin test data, analyze them in R, and test the null hypothesis that the 3 brands of aspirin are the same with a 95% confidence interval. I plan on doing this by utilizing R to pull the data into a dataframe with the columns: Brand, Peak, Replicant, Aliquot, Time, and Intensity. Once this is done, I can more easily navigate and group the data, allowing for easier analysis of it via visualizations and summary functions. Then, I plan on utilizing summary functions to measure the Area Under a Peak (AUP) for each aliquot of each replicant. Finally, I plan on utilizing Analysis of Variance (ANOVA) functions in R to compare the AUP between brands for each peak in order to confirm or deny the null hypothesis.
+
+  For some further context, here is what some of the less obvious variables I mentioned in the last paragraph mean, and their significance to the dataset. Peak is when the intensity of each pill is at its highest and usually indicates when a chemical or combination of chemicals is released from the pill. This usually happens in artificially timed intervals. Replicants indicate replicas of the same pill, as 3 replicas of 3 different brands of aspirin are tested in this dataset. Aliquot indicates a series of measurements within a timeframe of less than a second of a replicant of a pill. There are 3 aliquots for each replicant, 3 replicants for each peak, and 7 peaks for each brand in this dataset. Finally, intensity is the measured intensity of the chemical being released and time is the time in seconds since the pill activated.
+
+  Assumptions made for this project include that the scientists who supplied the data utilized a standardized process for attaining the measurements. They also include that there's the possibility for error within the process utilized to attain the data, and thus I'll be attempting to correct for it by first removing missing data and also by running the comparison on a version of the dataset with  outliers and on a version without outliers. Also, I'll be skipping over the "blank time" and "blank intensity" columns due to lack of information on what they entail.
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+#Suppress warnings
+options(warn=-1)
+# function to load and install packages if they don't exist
+usePackage <- function(p) {
+    if (!is.element(p, installed.packages()[,1]))
+        install.packages(p, dep = TRUE)
+    require(p, character.only = TRUE)
+}
+# load packages used in this project
+usePackage("tidyverse")
+usePackage("ggplot2")
+usePackage("knitr")
+usePackage("plyr")
+usePackage("dplyr")
+usePackage("utils")
+usePackage("rstatix")
+
+
+```
+
+
+
+1.  Format the data contained in the txt files for use in R. (Make sure to document all of the steps that you have done to prepare the data sets. You should turn in a new data set if you manually edited the data before loading it in R.)
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+#Suppress warnings
+options(warn=-1)
+
+# import the data
+
+#Directly changed the file names so that they're all consistent with each other
+# Format: Brand, "Pill", Pill number, Peak, "new.txt"
+# e.g.: Bayer Pill 1 136.5 92.90 new.txt
+
+#Made sure that the brand names are consistent on the files, since I'll be pulling the brand names from the file names
+
+# Format the data into one big dataframe with no null values for easy querying by looping through each csv file and putting the aliquot times and intensities as well as other distinguishing details into separate columns
+    #Columns
+        # Brand
+        # Peak
+        # Replicant
+        # Aliquot
+        # Time
+        # Intensity
+
+####
+#Obtain the names and filepaths of the files
+files <- list.files(path="./The trimed Datas copy", pattern="*.txt", full.names=TRUE, recursive = TRUE, include.dirs = TRUE)
+
+    # Create new empty Dataframe to dump all data into after initial cleaning
+    Data.All.df <- data.frame(matrix(ncol=6, nrow=0))
+    #Set the column names of the new data frame
+    colnames(Data.All.df) <- c('Brand','Peak','Replicant','Aliquot','Time','Intensity')
+
+# Start recursion of files  to pull their data into the dataframe
+for (f in 1:length(files)) {
+    t <- read.table(files[f], header=TRUE, sep = "\t", fill = TRUE) # load file
+    #Remove unnecessary columns
+    test.df <- t[,3:8]
+    #Remove null values and add columns for Aliquot times and intensities to variables
+    AT1 <- test.df[,1][!is.na(test.df[,1])]
+    AI1 <- test.df[,2][!is.na(test.df[,2])]
+    AT2 <- test.df[,3][!is.na(test.df[,3])]
+    AI2 <- test.df[,4][!is.na(test.df[,4])]
+    AT3 <- test.df[,5][!is.na(test.df[,5])]
+    AI3 <- test.df[,6][!is.na(test.df[,6])]
+
+    
+        #New rows Aliquot 1
+    # Start recursion of rows in each variable
+    for (r in 1:length(AT1)){
+        #Create a new row of data to add to the dataframe
+       new_row <- c(
+           strsplit(sapply(strsplit(files[f], "/"), tail, 1)," ")[[1]][1], #Pull brand from the file path
+           paste(strsplit(sapply(strsplit(files[f], "/"), tail, 1)," ")[[1]][4],strsplit(sapply(strsplit(files[f], "/"), tail, 1)," ")[[1]][5]), #Pull peak from the file path
+           strsplit(sapply(strsplit(files[f], "/"), tail, 1)," ")[[1]][3], #Pull replicant number from the file path
+           1, #Aliquot number
+           AT1[r], #Aliquot time
+           AI1[r]) #Aliquot intensity
+       Data.All.df[nrow(Data.All.df) + 1,]  <- new_row #Add the above data to a new row
+    }
+        #New rows Aliquot 2
+    for (r in 1:length(AT2)){
+       new_row <- c(
+           strsplit(sapply(strsplit(files[f], "/"), tail, 1)," ")[[1]][1],
+           paste(strsplit(sapply(strsplit(files[f], "/"), tail, 1)," ")[[1]][4],strsplit(sapply(strsplit(files[f], "/"), tail, 1)," ")[[1]][5]),
+           strsplit(sapply(strsplit(files[f], "/"), tail, 1)," ")[[1]][3],
+           2,
+           AT2[r],
+           AI2[r])
+       Data.All.df[nrow(Data.All.df) + 1,]  <- new_row
+    }
+        #New rows Aliquot 3
+    colnames(Data.All.df) <- c('Brand','Peak','Replicant','Aliquot','Time','Intensity')
+    for (r in 1:length(AT3)){
+       new_row <- c(
+           strsplit(sapply(strsplit(files[f], "/"), tail, 1)," ")[[1]][1],
+           paste(strsplit(sapply(strsplit(files[f], "/"), tail, 1)," ")[[1]][4],strsplit(sapply(strsplit(files[f], "/"), tail, 1)," ")[[1]][5]),
+           strsplit(sapply(strsplit(files[f], "/"), tail, 1)," ")[[1]][3],
+           3,
+           AT3[r],
+           AI3[r])
+       Data.All.df[nrow(Data.All.df) + 1,]  <- new_row
+    }
+ }
+# Adjust datatypes of the dataframe
+Data.All.df$Replicant <- as.numeric(Data.All.df$Replicant)
+Data.All.df$Aliquot <- as.numeric(Data.All.df$Aliquot)
+Data.All.df$Time <- as.numeric(Data.All.df$Time)
+Data.All.df$Intensity <- as.numeric(Data.All.df$Intensity)
+#####
+
+#Check for any null values to fix
+cbind(
+   lapply(
+     lapply(Data.All.df, is.na)
+     , sum)
+   )
+
+# Check for duplicate values to fix
+length(Data.All.df[duplicated(Data.All.df)])
+
+
+# Obtain a summary of the data
+summary(Data.All.df)
+
+```
+
+  Here I loaded all of the data into a dataframe, Data.All.df, in order to make it easier to process and analyze since I would then by able to group and aggregate the data similarly to a relational database table. This was done by  first making sure each file follows the same naming conventions and adjusting the file names if they did not, recursively looping through each file, and pulling info from the file name as well as the file contents to populate the dataframe.  Afterwards, I updated the datatypes of any numerical values of the dataframe so that they were numerical in order to allow for calculations and visualizations. Finally, I checked for any null values or duplicate values that could indicate issues in the dataset or my data processing. Luckily, neither of these issues were found. Above is a summary of the dataframe.
+
+
+
+2.  Perform an exploratory data analysis.
+
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE,fig.align="center",fig.width = 12, fig.height = 8}
+#Suppress warnings
+options(warn=-1)
+
+# Utilizing scatter/line plot to compare the different brands of aspirin to see if there's an obvious difference between them and to check for outliers/noise. The intensities(small circles) along with the mean(large circles) are being shown at each time point for each brand/peak combination and for each replicant and aliquot. The line plot is just of the mean of each brand at each time point within the peak. The lowest intensity, highest intensity, and the mean  at a time point for a brand/peak combination is reflected in the graphs. The three horizontal lines show the overall mean for each brand at the peak.
+
+
+
+#Looping through each peak via lapply to create the same chart for each one
+df.2.LineScatter <-  function(df) {
+  lapply(unique(df$Peak), function(i)  df[df$Peak == i, ]  %>%
+  ggplot( aes(x=Time, y=Intensity, group=Brand, color=Brand)) +
+      geom_point() + stat_summary(geom="point",fun="mean",shape=19,size=4) + 
+    stat_summary(geom="line",fun="mean",size=1) +
+   stat_smooth(method="lm", formula=y~1, se=FALSE) +
+    labs(title = paste("Intensities and their Averages At Each Time Point For Each Brand at ", i), colour = "Brand", y= "Intensity")
+  )
+}
+
+df.2.LineScatter(Data.All.df)
+
+
+```
+
+
+  My exploratory analysis utilized scatter/line charts for each peak, showing the intensity measurements, the average intensity at each time point, and the overall average intensity for the peak of all of the replicants, aliquots, and brands. I used this method since the same amount of replicants and aliquots were measured for each brand and peak, and this would allow for a simple visual comparison of the brands at each peak. Small circles represent intensities within each aliquot at each time point while larger circles and the lines connecting them represent the mean intensity and change in mean intensity between the time points for each brand. The three horizontal lines represent the overall average intensity for each brand at each peak. From these charts, I noticed that P.V. brand aspirin had the highest average intensity in all but two peaks, Bayer brand aspirin had the lowest average intensity at all but one peak, and Walgreens brand aspirin had average intensities between Bayer and P.V. at all but one peak.
+
+  The above chart also shows many outliers in the dataset due to inconsistencies between replicants and aliquots within the same brand and time point. Due to the data being taken into account for this project being the area under the curve of each of the aliquots and due to myself not having access to the researchers in order to ask further questions, I've decided to test the null hypothesis with and without outliers being removed. In order to remove the outliers, I'll be removing intensities in each aliquot that are either above 1.5 times the interquartile range plus the third quartile or below 1.5 times the interquartile range minus the first quartile of each aliquot. 
+  
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+#Suppress warnings
+options(warn=-1)
+# Create version of the dataset without outliers
+#Outliers here are intensities in each aliquot that are either above 1.5 times the interquartile range plus the third quartile or below 1.5 times the interquartile range minus the first quartile. (Q3 + 1.5xIQR or below Q1 - 1.5xIQR)
+
+
+#Create function to remove outliers
+remove_outliers_aspirin_dataset <- function(x.df){
+    
+    #Create temporary dataset with row numbers as a column
+Data.All.df.No.Outliers.Temp <- x.df
+Data.All.df.No.Outliers.Temp$row_names <- row.names(Data.All.df.No.Outliers.Temp)
+
+
+#Identify the values in each aliquot that are outliers
+Data.All.df.No.Outliers.Temp2 <- Data.All.df.No.Outliers.Temp %>%
+  group_by(Peak, Brand, Replicant, Aliquot) %>%
+  identify_outliers("Intensity")
+
+#Use recursion to rerun the function for identifying and removing outliers in case there are any left after each run 
+while (length(Data.All.df.No.Outliers.Temp2[,1]) > 0)
+        {
+        # create a list of all row numbers that are outliers
+        list.outliers <- as.list(Data.All.df.No.Outliers.Temp2$row_names)
+        
+        # Remove the outliers from the main dataset based on the row numbers of outliers list
+         Data.All.df.No.Outliers.Temp <- Data.All.df.No.Outliers.Temp[!Data.All.df.No.Outliers.Temp$row_names %in% list.outliers,]
+         
+         #Identify the values in each aliquot that are outliers
+        Data.All.df.No.Outliers.Temp2 <- Data.All.df.No.Outliers.Temp %>%
+          group_by(Peak, Brand, Replicant, Aliquot) %>%
+          identify_outliers("Intensity")
+        
+        }
+ return(Data.All.df.No.Outliers.Temp)
+}
+
+# Run function to remove outliers
+Data.All.df.No.Outliers <- remove_outliers_aspirin_dataset(Data.All.df)
+
+
+
+
+# Check that the outliers are gone from the Data.All.df.No.Outliers dataset by looking at one of the box plots from the previous section that had obvious outliers
+    f.query <- subset(Data.All.df.No.Outliers, (Peak == '136.5 92.90' & Brand == 'Bayer'), select=c(Peak, Brand, Replicant, Aliquot, Intensity))
+    ggplot(f.query, aes(x=Intensity, y=paste(Peak," ",Brand," Pill ",Replicant, " ", Aliquot), fill=Aliquot)) + 
+       labs(x="Intensity", y="Peak Brand Replicant Aliquot", title ="Data Without Outliers") +
+    geom_boxplot(outlier.colour = "red", outlier.shape = 1)
+    
+    f.query <- subset(Data.All.df.No.Outliers, (Peak == '136.5 92.90' & Brand == 'P.V'), select=c(Peak, Brand, Replicant, Aliquot, Intensity))
+    ggplot(f.query, aes(x=Intensity, y=paste(Peak," ",Brand," Pill ",Replicant, " ", Aliquot), fill=Aliquot)) + 
+       labs(x="Intensity", y="Peak Brand Replicant Aliquot", title="Data Without Outliers") +
+    geom_boxplot(outlier.colour = "red", outlier.shape = 1)
+    
+    f.query <- subset(Data.All.df.No.Outliers, (Peak == '136.5 92.90' & Brand == 'Wal'), select=c(Peak, Brand, Replicant, Aliquot, Intensity))
+    ggplot(f.query, aes(x=Intensity, y=paste(Peak," ",Brand," Pill ",Replicant, " ", Aliquot), fill=Aliquot)) + 
+       labs(x="Intensity", y="Peak Brand Replicant Aliquot", title="Data Without Outliers") +
+    geom_boxplot(outlier.colour = "red", outlier.shape = 1)
+    
+    
+    #Original Dataset
+        f.query <- subset(Data.All.df, (Peak == '136.5 92.90' & Brand == 'Bayer'), select=c(Peak, Brand, Replicant, Aliquot, Intensity))
+    ggplot(f.query, aes(x=Intensity, y=paste(Peak," ",Brand," Pill ",Replicant, " ", Aliquot), fill=Aliquot)) + 
+       labs(x="Intensity", y="Peak Brand Replicant Aliquot", title="Data With Outliers") +
+    geom_boxplot(outlier.colour = "red", outlier.shape = 1)
+    
+    f.query <- subset(Data.All.df, (Peak == '136.5 92.90' & Brand == 'P.V'), select=c(Peak, Brand, Replicant, Aliquot, Intensity))
+    ggplot(f.query, aes(x=Intensity, y=paste(Peak," ",Brand," Pill ",Replicant, " ", Aliquot), fill=Aliquot)) + 
+       labs(x="Intensity", y="Peak Brand Replicant Aliquot", title="Data With Outliers") +
+    geom_boxplot(outlier.colour = "red", outlier.shape = 1)
+    
+    f.query <- subset(Data.All.df, (Peak == '136.5 92.90' & Brand == 'Wal'), select=c(Peak, Brand, Replicant, Aliquot, Intensity))
+    ggplot(f.query, aes(x=Intensity, y=paste(Peak," ",Brand," Pill ",Replicant, " ", Aliquot), fill=Aliquot)) + 
+       labs(x="Intensity", y="Peak Brand Replicant Aliquot", title="Data With Outliers") +
+    geom_boxplot(outlier.colour = "red", outlier.shape = 1)
+    
+    
+```
+
+
+  Here I confirmed that my method for removing the outliers worked by plotting box plots for one of the peaks in order to check if the outliers are still present. Now, none of the outliers are present in the Data.All.df.No.Outliers dataframe while the Data.All.df dataframe is keeping all outliers.
+
+3.  Perform an Analysis of Variance or related analysis if you deem it appropriate.\
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+#Suppress warnings
+options(warn=-1)
+# Obtain the AUCs by taking each aliquot from the dataset and averaging them individually.
+
+#With outliers
+Aliquots_AUP <- ddply(Data.All.df, .(Peak, Brand, Replicant, Aliquot), summarize,
+      Count = length(Intensity),
+      SD = round(sd(Intensity),2),
+      AUP = round(mean(Intensity), 2))
+
+#Without outliers
+Aliquots_AUP.No.Outliers <- ddply(Data.All.df.No.Outliers, .(Peak, Brand, Replicant, Aliquot), summarize,
+      Count = length(Intensity),
+      SD = round(sd(Intensity),2),
+      AUP = round(mean(Intensity), 2))
+
+
+
+#Check the variance and standard deviation between the AUPs of the 3 aliquots for each replicant and average it
+
+# With outliers
+
+Avg.SD.AUP.With.Outliers <- mean(ddply(Aliquots_AUP, .(Peak, Brand, Replicant), summarize,
+      SD_AUP = round(sd(AUP),2),
+      Var_AUP = round(var(AUP),2))[,"SD_AUP"])
+
+
+Avg.VAR.AUP.With.Outliers <- mean(ddply(Aliquots_AUP, .(Peak, Brand, Replicant), summarize,
+      SD_AUP = round(sd(AUP),2),
+      Var_AUP = round(var(AUP),2))[,"Var_AUP"])
+
+
+
+
+# Without outliers
+
+Avg.SD.AUP.Without.Outliers <- mean(ddply(Aliquots_AUP.No.Outliers, .(Peak, Brand, Replicant), summarize,
+      SD_AUP = round(sd(AUP),2),
+      Var_AUP = round(var(AUP),2))[,"SD_AUP"])
+
+
+Avg.VAR.AUP.Without.Outliers <- mean(ddply(Aliquots_AUP.No.Outliers, .(Peak, Brand, Replicant), summarize,
+      SD_AUP = round(sd(AUP),2),
+      Var_AUP = round(var(AUP),2))[,"Var_AUP"])
+
+
+#Summarize the data in a results table
+Results_Table <- data.frame(Method=
+  c('With Outliers',
+   'Without Outliers'),
+                 Standard_Deviation = c(Avg.SD.AUP.With.Outliers,Avg.SD.AUP.Without.Outliers),
+                 Variance=c(Avg.VAR.AUP.With.Outliers,Avg.VAR.AUP.Without.Outliers))
+
+kable1 <- kable(Results_Table, caption="Variance and Standard Deviation of the Aliquots, Grouped by Peak, Brand, and Replicant", format = "simple")  
+
+
+
+kable1
+```
+
+
+Here I obtained some summary statistics in order to compare the 3 brands of aspirin in the 2 new datasets (with outliers and without outliers). I then grouped the data by peak, brand, replicant, and aliquot. Then I obtained the count, standard deviation, and mean of  each group. The mean would also be considered the area under the peak for this dataset, so I labeled it as AUP. Afterwards I printed the first 6 rows of each of these datasets.
+
+Furthermore, I checked for standard deviation and variance between the AUPs, grouped by peak, brand, and replicant. I found that the aliquots are very spread out between each other, especially between those that had the outliers removed. This may be indicative of an issue with the measurements.
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+#Here I ran a  ANOVA test with no adjustments for Type I Error Rate:
+
+# Compute the one way analysis of variance with outliers
+res.aov <- aov(AUP ~ Brand, data = Aliquots_AUP)
+# Summary of the analysis
+summary(res.aov)
+#Pairwise analysis of variance with outliers
+ pairwise.t.test(Aliquots_AUP$AUP, Aliquots_AUP$Brand, p.adjust.method="none")
+
+
+ 
+# Compute the one way analysis of variance without outliers to check if Brand has an effect
+res.aov <- aov(AUP ~ Brand, data = Aliquots_AUP.No.Outliers)
+# Summary of the analysis
+summary(res.aov)
+#Pairwise analysis of variance without outliers
+ pairwise.t.test(Aliquots_AUP.No.Outliers$AUP, Aliquots_AUP.No.Outliers$Brand, p.adjust.method="none")
+ 
+ #Create a table with the results
+ Results_Table <- data.frame(Brand=c('Brand - With Outliers', 'Brand - w/o Outliers', 'P.V. vs Bayer - With Outliers','Wal vs Bayer - With Outliers','Wal vs P.V. - With Outliers', 'P.V. vs Bayer - w/o Outliers','Wal vs Bayer - w/o Outliers','Wal vs P.V - w/o Oultiers'),AoV_P_Value=c(0.973,0.729,'','','','','',''),
+                 Pairwise_T_Test_P_Value = c('','',0.85,0.98,0.83,0.53,0.46,0.91)
+  )
+
+kable4 <- kable(Results_Table, caption="ANOVA and T-Test Results Summary", format = "simple")  
+kable4
+
+
+ 
+```
+
+  Here I conducted a one way analysis of variance to check if brand has an effect on the area under the peak as well as a pairwise t-test with no adjustment for error to check if there was a significant difference that can be found between the individual brands. One-way ANOVA is generally used to find out if there's a statistically significant difference between the means of 3 or more independent groups. It allows me to generate an F value that can be in turned used to obtain a P statistic which allows for measures of significance. The T-test is a common hypothesis test based on the Student's t-distribution that's often used to make pairwise comparisons.
+
+  These tests were ran on the datasets with and without outliers. At a 95% confidence interval, there was no significant difference found in either of the brands. The pairwise t-tests with and without outliers also did not find a significant difference between the brands.
+
+ 
+
+
+
+
+    ANOVA Formula:
+
+$$ F = \frac{MST}{MSE}=\frac{\sum_{j=1}^{k}\sum_{j=1}^{l}(\bar{x}_{j}-x_{j})^{2}}{df_w}$$
+
+
+
+    T-Test Formula:
+$$ t = \frac{\bar{x}-\mu}{\frac{s}{\sqrt{n}}} $$
+
+
+*Sources:    https://www.vedantu.com/formula/anova-formula https://www.educba.com/t-test-formula/ *
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+#Suppress warnings
+options(warn=-1)
+#ANOVA Analysis
+
+
+# Conduct a Tukey-Kramer test to make pairwise comparisons of the 3 Brands
+TukeyHSD(res.aov)$Brand
+
+
+
+# Conduct a  Bonferroni  test to make pairwise comparisons of the 3 Brands
+Aliquots_AUP %>%
+  pairwise_t_test(
+    AUP ~ Brand,
+    paired = TRUE,
+    p.adjust.method = "holm",
+    pool.sd = TRUE
+  )
+
+
+
+# Conduct a Tukey-Kramer test to make pairwise comparisons of the 3 Brands
+TukeyHSD(res.aov)$Brand
+
+
+
+# Conduct a  Bonferroni  test to make pairwise comparisons of the 3 Brands
+Aliquots_AUP.No.Outliers %>%
+  pairwise_t_test(
+    AUP ~ Brand,
+    paired = TRUE,
+    p.adjust.method = "holm",
+    pool.sd = TRUE
+  )
+
+#Display the P values in a results table:
+Results_Table <- data.frame(Brand=c('P.V. vs Bayer - With Outliers','Wal vs Bayer - With Outliers','Wal vs P.V. - With Outliers', 'P.V. vs Bayer - w/o Outliers','Wal vs Bayer - w/o Outliers','Wal vs P.V - w/o Oultiers'),Tukey_Kramer=c(0.489,0.984,0.389,0.078,0.030,0.924),
+                 Bonferroni = c(0.818,0.887,0.118,0.140,0.132,0.624)
+  )
+
+kable2 <- kable(Results_Table, caption="Ad-Hoc Test Results Summary", format = "simple")  
+kable2
+
+
+```
+
+  Here, for further analysis I ran a Tukey-Kramer post-hoc test which has an error correction that assists when comparing pairs within a group with sample sizes that aren't exactly the same. This isn't the case in this study as although the amount of measurements within each aliquot vary between 20 and 29, the analysis is being done on the area under the peak for each aliquot, or in other words, the mean of each aliquot. The Tukey-Kramer method is optimally used when all possible pairs of a group are being compared.
+    
+*Source: https://www.statology.org/tukey-vs-bonferroni-vs-scheffe/*    
+    
+    
+    Tukey-Kramer post-hoc formula:
+
+$$ y_i-y_j \pm q\alpha,k,N-k\sqrt{(\frac{MST}{2})(\frac{1}{n_i}+\frac{1}{n_j})} $$
+
+
+*Source: https://aaronschlegel.me/tukeys-test-post-hoc-analysis.html*
+
+Here, I also  ran a Bonferroni post-hoc test which has an error correction that, similarly to the Tukey-Kramer test, also assists when comparing pairs within a group with sample sizes that aren't exactly the same. This test is optimally used when a subset of pairs from a group is being compared.
+
+*Source: https://www.statology.org/tukey-vs-bonferroni-vs-scheffe/*
+
+Bonferroni  post-hoc formula Confidence Intervals:
+
+$$ \hat{C}_1 = \frac{\bar{Y}_1+\bar{Y}_2}{2}-\frac{\bar{Y}_3+\bar{Y}_4}{2} $$
+
+
+and
+    
+$$ \hat{C}_2 = \frac{\bar{Y}_1+\bar{Y}_3}{2}-\frac{\bar{Y}_2+\bar{Y}_4}{2} $$
+
+Bonferroni  post-hoc formula Point Estimate and Variance of the Confidence Intervals:
+
+$$ \sum^4_{\iota=1}\frac{c^2_\iota}{\eta_\iota} $$
+
+    and
+
+$$ \sigma^2_\epsilon\sum^4_{\iota=1}\frac{c^2_\iota}{4} $$
+*Source: https://www.itl.nist.gov/div898/handbook/prc/section4/prc473.htm*
+
+For this project, I am prioritizing the results of the pure ANOVA and pairwise T-tests without error correction, although stakeholders are free to use the results of the Tukey-Kramer and/or Bonferroni tests if they so wish as they all have their merits and depending on factors mentioned in my descriptions of them above, can lead to more accurate results.
+
+
+-   Explain the conclusions of your analysis.
+
+### Conclusion
+
+  The goal of this project was to fail to reject or to reject the null hypothesis that the aspirin pills from the three companies are the same. My conclusion for this project is to fail to reject the null hypothesis that the aspirin pills are the same. The initial ANOVA test revealed that at a 95% confidence rate, there is no difference between the brands with or without the outliers being removed. This result was further confirmed when running pairwise t-tests between the three brands. 
+
+  When outliers are not removed and when comparing the individual brands between each other using either Tukey-Kramer or Bonferroni ad-hoc analyses, the null hypothesis is not rejected and the aspirins from the 3 companies are the same at a 95% confidence rate. When the outliers are removed and the Tukey-Kramer ad-hoc analysis but not the Bonferroni ad-hoc analysis is used, the Walgreens and Bayers brand aspirin pills are found to be different at a 95% rate of confidence while the other pairs of brands are found to be the same. 
+
+  For this project, as mentioned in the previous section, I'm prioritizing the results of the ANOVA and T-Test without error corrections. Thus, I failed to reject the null hypothesis. If a stakeholder wishes to prioritize the results of the Tukey-Kramer ad-hoc analysis when outliers are removed, they would reject the null hypothesis. In all other cases of this study including when using Bonferroni ad-hoc analysis, the null hypothesis fails to be rejected
+
+  These results could be useful for confirming whether or not the aspirin brands are the same depending on whether conditions are adjusted(outliers are removed) or different types of error correction are used. Something that may be necessary to be looked into though before accepting these results would be the high variance found between the aliquots as shown in part 3 as they may be indicating an issue with the data collection or may just be due to the nature of the process being measured.
+
+4.  Provide a one-page write-up (excluding graphs, tables and figures) explaining your analysis of the dataset and your recommendations on the usefulness of your predictions.
+
+5.  As a secondary component provide annotated code that replicates your analysis.
+
+## Datasets
+
+The datasets are organized into a set of folders.
+
+1.  Each folders refers to the peak location.
+2.  Within each folder there is a single txt file for each pill.
+3.  Each text file will have 3 columns that correspond to the intensities of three aliqouts and other information as well.
+4.  The other columns correspond to blank time and retention time for which the intensity was measured.
+5.  All of the non-relevant intensities have been deleted.
+6.  To calculate the area under a peak (AUP)- simply take the mean of the intensity values for a given aliqout.
+
+## Notes
+
+1.  Make sure to check for consistency between the three AUP's associated with the same pill- these are all measurements of the same object.
+
+2.  Make sure to document everything that you have done in your rmd file... this is your lab notebook for this type of project.
+
+3.  I hoping to receive an ANOVA with a set of post hoc tests between the three brands of pills, but if you are concerned about the assumptions for an ANOVA please do not hesitate to do something else or to discuss why we can not perform a formal analysis.
+
+4. Do watch the video where I introduce the problem before starting the task.
+
+5. You are expected to work by yourself on the project but we will have a message board for questions about the project open.
+

@@ -1,0 +1,403 @@
+---
+title: "Project 1"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(warn=-1)
+```
+
+
+
+
+
+
+## Background
+
+Airoldi_Flury_Salvioni_JTheorBiol_1995: Discrimination Between Two Species of Microtus using both Classified and Unclassified Observations.
+
+ 
+>Microtus subterraneus and M. multiplex are now considered to be two distinct species (Niethammer, 1982; Krapp, 1982), contrary to the older view of Ellerman & Morrison-Scott (1951). The two species differ in the number of chromosomes: 2n=52 or 54 for M. subterraneus, and 2n=46 or 48 for M. multiplex. Hybrids from the laboratory have reduced fertility (Meylan, 1972), and hybrids from the field, whose karyotypes would be clearly recognizable, have never been found (Krapp, 1982). 
+
+>The geographic ranges of distribution of M. subterraneus and M. multiplex overlap to some extent in the Alps of southern Switzerland and northern Italy (Niethammer, 1982; Krapp, 1982). M. subterraneus is smaller than M. multiplex in most measurements, and occurs at elevations from 1000 m to over 2000 m, except in the western part of its range (for example, Belgium and Brittany), where it is found in lower elevations. M. multiplex is found at similar elevations, but also at altitudes from 200–300 m south of the Alps (Ticino, Toscana). 
+
+>The two chromosomal types of M. subterraneus can be crossed in the laboratory (Meylan, 1970, 1972), but no hybrids have so far been found in the field. In M. multiplex, the two chromosomal types show a distinct distribution range, but they are morphologically indistinguishable, and a hybrid has been found in the field (Storch & Winking, 1977). 
+
+>No reliable criteria based on cranial morphology have been found to distinguish the two species. Saint Girons (1971) pointed out a difference in the sutures of the posterior parts of the premaxillary and nasal bones compared to the frontal one, but this criterion does not work well in many cases. For both paleontological and biogeographical research it would be useful to have a good rule for discriminating between the two species, because much of the data available are in form of skull remains, either fossilized or from owl pellets. 
+
+>The present study was initiated by a data collection consisting of eight morphometric variables measured by one of the authors (Salvioni) using a Nikon measure-scope (accuracy 1/1000 mm) and dial calipers (accuracy 1/100 mm). The sample consists of 288 specimens collected mostly in Central Europe (Alps and Jura mountains) and in Toscana. One peculiar aspect of this data set is that the chromosomes of 89 specimens were analyzed to identify the species. Only the morphometric characteristics are available for the remaining 199 specimens…”
+
+
+## Project 
+
+### Background & Objective
+	Since 1982, voles have been differentiated into two species, Microtus subterraneus and Microtus multiplex, mainly based on the number of chromosomes they each have. Hybrids of these two species are not common since they would have reduced fertility as discovered via lab testing. Other than their different habitats, the two species of voles are very difficult to reliably distinguish between. A study was conducted based on the collection of samples of fossilized vole skull remains in order to find a way to distinguish the two species of voles.
+	The objective of this project is to classify 199 unclassified vole skull samples via testing logistic regression models with cross-validation in order to find a model that will identify between the two species with a high percentage of accuracy. I have access to a dataset of 89 samples of voles that are split between the two species, Microtus subterraneus and Microtus multiplex, classified via an analysis of their chromosomes. I also have access to 199 samples of voles that have not yet been classified. The variables included in the dataset that will be used for this classification include the condyle incisive length or length, the height above bullae, and the width across rostrum of each vole skull.
+
+
+### Original Dataset Analysis
+	After importing the data, I ended up with 3 different datasets, subterraneus, multiplex, and unknown, each with 3 independent variable variables and target variable which was the classification ID. Via analysis, I found that most of the data was centered closely around their means, except for a few outliers which were extremely large or small. After investigating these outliers, I concluded that the outliers are all at least 5 times larger or smaller than the mean of the samples, and the additional attributes of each individual sample that has an outlier, are not proportionally larger or smaller based on the outlier, but are instead close to the mean of the data. This has led me to believe that the outliers are data entry or measurement errors, worthy of being removed from the dataset, so I removed all datapoints that were 5 times greater and 5 times less than the mean of the dataset. This ended up being 3 datapoints. In later tests of the model, I checked prediction accuracy through cross validation and found that removing the outliers improved accuracy by around 4 percent. I decided not to remove the outliers from the unclassified data, since the main purpose of removing the outliers is to improve the logistical model which I'll be using to classify the unclassified data. Here are some boxplots that show the distribution and outliers of the data:
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+#Suppress warnings
+options(warn=-1)
+
+# Set so that long lines in R will be wrapped:
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=80), tidy=TRUE)
+# function to install packages if they don't exist
+usePackage <- function(p) {
+    if (!is.element(p, installed.packages()[,1]))
+        install.packages(p, dep = TRUE)
+    require(p, character.only = TRUE)
+}
+# load packages used in this project
+usePackage("readxl")
+usePackage("ggplot2")
+usePackage("caret")
+usePackage("knitr")
+
+
+# read excel files into dataframes
+Subterraneus.df <- as.data.frame(read_excel("Vole Skulls.xlsm", sheet="Subterraneus"))
+Multiplex.df <- as.data.frame(read_excel("Vole Skulls.xlsm", sheet="Multiplex"))
+Unknown.df <- as.data.frame(read_excel("Vole Skulls.xlsm", sheet="Unknown"))
+
+#Standardize column names
+OrigColNames <- colnames(Subterraneus.df)
+StandColNames <- c("V_S_ID", "ChromosomalID", "IncisiveOrSkullLength", "SkullHeight", "SkullWidth")
+colnames(Subterraneus.df) <- StandColNames
+colnames(Multiplex.df) <- StandColNames
+colnames(Unknown.df) <- StandColNames
+
+# # Remove the main ID column
+# Subterraneus.df <- subset(Subterraneus.df, select = -c(V_S_ID))
+# Multiplex.df <- subset(Multiplex.df, select = -c(V_S_ID))
+# Unknown.df <- subset(Unknown.df, select = -c(V_S_ID))
+
+
+#Remove rows with no values
+Subterraneus.df <- Subterraneus.df[rowSums(is.na(Subterraneus.df)) == 0, ] 
+Multiplex.df <- Multiplex.df[rowSums(is.na(Multiplex.df)) == 0, ]
+Unknown.df <- Unknown.df[rowSums(is.na(Unknown.df)) == 0, ]
+
+
+
+Combined_S_M.df <- merge(Subterraneus.df,Multiplex.df, all = TRUE)
+
+Combined_S_M_U.df <- merge(Combined_S_M.df,Unknown.df, all = TRUE)
+
+# Update the dataframe with subterraneus and multiplex samples to have an extra column representing ChromosomalID by 1(subterraneus) and 0(multiplex) to improve the speed of logistic regression and unlock the logit parameter for the binary option
+Combined_S_M.df$ChromosomalIDBinary <- as.factor(ifelse(Combined_S_M.df$ChromosomalID == "subterraneus", 1, 0))
+
+
+```
+
+Standard logistical regression formula:
+$$logit(\pi) = log(\frac{\pi}{1-\pi}) = \beta_0+\beta_1x_1+...\beta_qx_q$$
+
+
+Replaced with the variables used in this scenario, this would be:
+$$logit(ChromosomalID
+) = log(\frac{ChromosomalID
+}{1-ChromosomalID
+}) = 0+beta_1(IncisiveOrSkullLength)+beta_2(SkullHeight)+beta_3(SkullWidth)$$
+
+
+
+### Data summaries and plots showing the discovery of major outliers
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+# Set so that long lines in R will be wrapped:
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=80), tidy=TRUE)
+
+
+par(mfrow = c(2,3))
+# par plot
+plot(Subterraneus.df[,2:5])
+title(main="Subterraneus Dataset")
+print("Subterraneus Data Summary")
+summary(Subterraneus.df[,2:5])
+
+
+plot(Multiplex.df[,2:5])
+title(main="Multiplex Dataset")
+print("Multiplex Data Summary")
+summary(Multiplex.df[,2:5])
+
+plot(Unknown.df[,2:5])
+title(main="Unknown Dataset")
+print("Unknown Data Summary")
+summary(Unknown.df[,2:5])
+
+
+# box plot to look for outliers in the known data
+ggplot(Combined_S_M_U.df, aes(x=ChromosomalID, y=IncisiveOrSkullLength)) + 
+  geom_boxplot() + ylab(label = "Incisive or Skull Length")
+ggplot(Combined_S_M_U.df, aes(x=ChromosomalID, y=SkullHeight)) + 
+  geom_boxplot() + ylab(label = "Skull Height")
+ggplot(Combined_S_M_U.df, aes(x=ChromosomalID, y=SkullWidth)) + 
+  geom_boxplot() + ylab(label = "Skull Width")
+
+```
+
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+# Set so that long lines in R will be wrapped:
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=80), tidy=TRUE)
+#After some analysis, I've noticed that the outliers are all around 10 times larger or smaller than the rest of the samples, and the additional attributes of each individual sample that has an outlier, are not proportionally larger or smaller based on the outlier, but are close to the mean of the data. This has led me to believe that the outliers are data entry or measurement errors, worthy of being removed from the dataset. I decided not to remove the outliers from the unclassified data, since the main purpose of removing the outliers is to improve the logistical model which I'll be using to classify the unclassified data.
+
+
+# Find the outliers based on whether a datapoint is 5 times higher or lower than the mean of the variable in the dataset
+# subset(Subterraneus.df, IncisiveOrSkullLength >= mean(IncisiveOrSkullLength)*5 | IncisiveOrSkullLength <= mean(IncisiveOrSkullLength)/5)
+# subset(Subterraneus.df, SkullHeight >= mean(SkullHeight)*5 | SkullHeight <= mean(SkullHeight)/5)
+# subset(Subterraneus.df, SkullWidth >= mean(SkullWidth)*5 | SkullWidth <= mean(SkullWidth)/5)
+# 
+# subset(Multiplex.df, IncisiveOrSkullLength >= mean(IncisiveOrSkullLength)*5 | IncisiveOrSkullLength <= mean(IncisiveOrSkullLength)/5)
+# subset(Multiplex.df, SkullHeight >= mean(SkullHeight)*5 | SkullHeight <= mean(SkullHeight)/5)
+# subset(Multiplex.df, SkullWidth >= mean(SkullWidth)*5 | SkullWidth <= mean(SkullWidth)/5)
+# 
+# subset(Unknown.df, IncisiveOrSkullLength >= mean(IncisiveOrSkullLength)*5 | IncisiveOrSkullLength <= mean(IncisiveOrSkullLength)/5)
+# subset(Unknown.df, SkullHeight >= mean(SkullHeight)*5 | SkullHeight <= mean(SkullHeight)/5)
+# subset(Unknown.df, SkullWidth >= mean(SkullWidth)*5 | SkullWidth <= mean(SkullWidth)/5)
+
+
+
+# Create a function to quickly remove the outliers
+Remove_Outliers_Vole_Datasets <- function(x)
+{
+  x <- subset(x, IncisiveOrSkullLength <= mean(IncisiveOrSkullLength)*5 & IncisiveOrSkullLength >= mean(IncisiveOrSkullLength)/5)
+  x <- subset(x, SkullHeight <= mean(SkullHeight)*5 & SkullHeight >= mean(SkullHeight)/5)
+  x <- subset(x, SkullWidth <= mean(SkullWidth)*5 & SkullWidth >= mean(SkullWidth)/5)
+
+
+}
+
+# Use the function for removing the outliers
+Subterraneus.df <- Remove_Outliers_Vole_Datasets(Subterraneus.df)
+Multiplex.df <- Remove_Outliers_Vole_Datasets(Multiplex.df)
+
+
+# Update the combined datasets
+
+Combined_S_M.df <- merge(Subterraneus.df,Multiplex.df, all = TRUE)
+
+Combined_S_M_U.df <- merge(Combined_S_M.df,Unknown.df, all = TRUE)
+
+# Update the dataframe with subterraneus and multiplex samples to have an extra column representing ChromosomalID by 1(subterraneus) and 0(multiplex)
+Combined_S_M.df$ChromosomalIDBinary <- as.factor(ifelse(Combined_S_M.df$ChromosomalID == "subterraneus", 1, 0))
+
+
+
+
+```
+	While testing the independent variables and combinations of the independent variables via the general linear model function in R, I found that none of them had a significant impact on the Chromosomal ID, as they each only had P values greater than .05. Furthermore, through running the general linear model function on the variables, squared versions of the variables, and with a log transformed incisive or skull length (this variable consistently had an extremely low intercept value), I found that leavings the variables untransformed, not squared, and utilizing only addition seemed to give the best fit, as this model had the lowest residual deviance, highest null deviance, and lowest AIC, indicating a good fit.
+	
+Null Deviance - how well the dependent variable can be predicted by a model via just the intercept term. Higher = Better
+Residual Deviance - how well the dependent variable can be predicted by a model with predictor variables. Lower = Better
+AIC(Akaike information criterion) - Used to determine the fit of a model. The best-fit model according to AIC is the one that explains the greatest amount of variation using the fewest possible independent variables. Lower = Better
+*source: https://www.statology.org/null-residual-deviance/*
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+# Suppress warnings
+options(warn=-1)
+# Set so that long lines in R will be wrapped:
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=80), tidy=TRUE)
+#Create models and adjust them based on their summaries
+model1 <- glm(ChromosomalIDBinary ~ IncisiveOrSkullLength*SkullHeight*SkullWidth, data = Combined_S_M.df, family = binomial(logit))
+model2 <- glm(ChromosomalIDBinary ~ I(IncisiveOrSkullLength^2)*I(SkullHeight^2)*I(SkullWidth^2), data = Combined_S_M.df, family = binomial(logit))
+model3 <- glm(ChromosomalIDBinary ~ IncisiveOrSkullLength*SkullHeight*SkullWidth+1, data = Combined_S_M.df, family = binomial(logit))
+model4 <- glm(ChromosomalIDBinary ~ log(IncisiveOrSkullLength)*SkullHeight*SkullWidth, data = Combined_S_M.df, family = binomial(logit))
+model5 <- glm(ChromosomalIDBinary ~ IncisiveOrSkullLength+SkullHeight+SkullWidth, data = Combined_S_M.df, family = binomial(logit))
+
+
+
+df_Model1 <- data.frame(Formula=
+  c('ChromosomalIDBinary ~ IncisiveOrSkullLength * SkullHeight * SkullWidth',
+   'ChromosomalIDBinary ~ I(IncisiveOrSkullLength^2) * I(SkullHeight^2) * I(SkullWidth^2)',
+    'ChromosomalIDBinary ~ IncisiveOrSkullLength * SkullHeight * SkullWidth + 1',
+    'ChromosomalIDBinary ~ log(IncisiveOrSkullLength) * SkullHeight * SkullWidth',
+    'ChromosomalIDBinary ~ IncisiveOrSkullLength + SkullHeight + SkullWidth'),
+                 AIC = c(64.966,65.23,64.966,64.975,57.965),
+                 Residual_Deviance=c(48.966,49.23,48.966,48.975,49.965  ),
+               Null_Deviance=c(117.823,117.82  ,117.823,117.823,117.823  ))
+
+kable1 <- kable(df_Model1, caption="GLM Models and Fit Results")    
+
+
+kable1
+
+```
+
+
+### Model Selection and Analysis
+	Here, I ended up testing quite a few minor modifications to my base chosen model of “ChromosomalIDBinary ~ IncisiveOrSkullLength + SkullHeight + SkullWidth” but ended up sticking with the base form after finding that it was obtaining the most consistently high accuracy rate during multiple cross validation tests. Furthermore, after looking through the advantages and disadvantages of the different types of cross validation methods for testing a model, I ended up settling on Repeated 10 times – Leave One Out Cross Validation. This model’s biggest disadvantage compared to other versions of cross validation is that it’s very hardware intensive, but I chose it since the dataset is small and thus it wouldn’t matter if the method was hardware intensive.
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+# Set so that long lines in R will be wrapped:
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=80), tidy=TRUE)
+
+
+#specify the cross-validation method
+ctrl <- trainControl(method = "repeatedcv", number = 10, repeats = 3)
+
+#fit a regression model and use LOOCV to evaluate performance
+model0_fit <- train(ChromosomalIDBinary ~ log(IncisiveOrSkullLength) + log(SkullHeight) + SkullWidth, data = Combined_S_M.df, method = "glm", trControl = ctrl)
+model1_fit <- train(form=ChromosomalIDBinary ~ IncisiveOrSkullLength + SkullHeight + SkullWidth + 1, data = Combined_S_M.df, method = "glm", trControl = ctrl)
+model1.5_fit <- train(form=ChromosomalIDBinary ~ IncisiveOrSkullLength + SkullHeight + SkullWidth, data = Combined_S_M.df, method = "glm", trControl = ctrl)
+
+model2_fit <- train(form=ChromosomalIDBinary ~ IncisiveOrSkullLength*SkullHeight*SkullWidth, data = Combined_S_M.df, method = "glm", trControl = ctrl)
+model3_fit <- train(form=ChromosomalIDBinary ~ I(log(IncisiveOrSkullLength)^2)+I(log(SkullHeight)^2)+I(SkullWidth^2) + 1, data = Combined_S_M.df, method = "glm", trControl = ctrl)
+model4_fit <- train(form=ChromosomalIDBinary ~ I(IncisiveOrSkullLength^2)+I(SkullHeight^2)+I(SkullWidth^2) + 1, data = Combined_S_M.df, method = "glm", trControl = ctrl)
+model5_fit <- train(form=ChromosomalIDBinary ~ SkullHeight + SkullWidth, data = Combined_S_M.df, method = "glm", trControl = ctrl)
+
+model6_fit <- train(form=ChromosomalIDBinary ~ SkullHeight + SkullWidth + 1, data = Combined_S_M.df, method = "glm", trControl = ctrl)
+
+model7_fit <- train(form=ChromosomalIDBinary ~ SkullWidth, data = Combined_S_M.df, method = "glm", trControl = ctrl)
+
+model8_fit <- train(form=ChromosomalIDBinary ~ SkullWidth + 1, data = Combined_S_M.df, method = "glm", trControl = ctrl)
+
+model8_fit <- train(form=ChromosomalIDBinary ~ log(IncisiveOrSkullLength) + SkullHeight + SkullWidth, data = Combined_S_M.df, method = "glm", trControl = ctrl)
+
+#view summary of LOOCV 
+print('model 0 accuracy:')
+print(model0_fit$results$Accuracy)
+print('model 1 accuracy:')
+print(model1_fit$results$Accuracy)
+print('model 1.5 accuracy:')
+print(model1.5_fit$results$Accuracy)
+print('model 2 accuracy:')
+print(model2_fit$results$Accuracy)
+print('model 3 accuracy:')
+print(model3_fit$results$Accuracy)
+print('model 4 accuracy:')
+print(model4_fit$results$Accuracy)
+print('model 5 accuracy:')
+print(model5_fit$results$Accuracy)
+print('model 6 accuracy:')
+print(model6_fit$results$Accuracy)
+print('model 7 accuracy:')
+print(model7_fit$results$Accuracy)
+print('model 8 accuracy:')
+print(model8_fit$results$Accuracy)
+
+
+```
+
+*Logistic regression curve plot of the chosen model, showing the relationship between the independent variables and the chance that a vole skull is Multiplex of Subterraneus.:*
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+# Suppress warnings
+options(warn=-1)
+# Set so that long lines in R will be wrapped:
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=80), tidy=TRUE)
+#Plot of the optimal model: ChromosomalID ~ IncisiveOrSkullLength + SkullHeight + SkullWidth
+
+par(mfrow=c(1,3))
+#plot logistic regression curve
+ggplot(Combined_S_M.df, aes(x=IncisiveOrSkullLength,as.numeric(ChromosomalIDBinary) - 1)) +
+  geom_point(alpha=.5) +
+    stat_smooth(method="glm", se=FALSE, method.args = list(family=binomial)) + 
+    labs(x = "Incisive Or Skull Length", y = "Multiplex(0) or Subterraneus(1)", Title = "logistic regression curve")
+
+
+
+#plot logistic regression curve
+ggplot(Combined_S_M.df, aes(x=SkullHeight,as.numeric(ChromosomalIDBinary) - 1)) +
+  geom_point(alpha=.5) +
+    stat_smooth(method="glm", se=FALSE, method.args = list(family=binomial)) + 
+    labs(x = "Skull Height", y = "Multiplex(0) or Subterraneus(1)", Title = "logistic regression curve")
+
+
+
+#plot logistic regression curve
+  ggplot(Combined_S_M.df, aes(SkullWidth,as.numeric(ChromosomalIDBinary) - 1)) +
+  geom_point(alpha=.5) +
+    stat_smooth(method="glm", se=FALSE, method.args = list(family=binomial)) + 
+    labs(x = "Skull Width", y = "Multiplex(0) or Subterraneus(1)", Title = "logistic regression curve")
+  
+
+  
+
+```
+
+
+### Model Testing Results
+	After testing the beforementioned model with Repeated 10 times 10 fold – Leave One Out Cross Validation, I got an 88.08% accuracy rate. Also, with the model being simple, only utilizing addition of the independent variables, there is a low risk of overfitting. Furthermore, I tested the model on the unknown classification ID dataset and got results that seemed completely plausible. This notebook outputs the results as a file called: "Vole Skulls Unknown Classified.csv".
+
+
+
+### Recommendations on Usefulness and Conclusion
+	I believe that with the high accuracy rate and the simplicity of the logistic regression model that I created for this project, it is fit for use with classifying vole skulls by species.
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+# Set so that long lines in R will be wrapped:
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=80), tidy=TRUE)
+
+#Create a new dataframe to output the classified results to
+Unknown.classified.df <- Unknown.df
+
+#Run the model on the unknown vole skull data, outputing the results to the newly created dataframe for classified results
+Unknown.classified.df$ChromosomalIDBinary <- predict(model1.5_fit,newdata =Unknown.df,type="raw")
+
+
+#Update the Unknown.classified.df so that it mimics the original dataset column names and columns  to get it ready for output into a csv file
+Unknown.classified.df$ChromosomalID <- ifelse(Unknown.classified.df$ChromosomalIDBinary == 1, "Subterraneus", "Multiplex")
+
+Unknown.classified.df <- Unknown.classified.df[,1:5]
+
+colnames(Unknown.classified.df) <- OrigColNames
+
+# Output the results to a csv file
+write.csv(Unknown.classified.df[,1:5],"Vole Skulls Unknown Classified.csv", row.names = FALSE)
+
+options(warn=0)
+
+
+
+
+final.pred <- predict(model1.5_fit, newdata = Unknown.df)
+
+fp1 <- ifelse(final.pred == 0, "multiplex", "subterraneus" )
+
+f1 <- as.data.frame(fp1)
+
+table(f1$fp1)
+
+```
+
+6.	As a secondary component provide annotated code that replicates your analysis.
+	
+
+###  Source
+Airoldi, J.-P., B. Flury, M. Salvioni (1996) "Discrimination between two species of Microtus using both classified and unclassified observations" Journal of Theoretical Biology 177:247-262
+
+
+
+## Vole Skull Excell Spread Sheet 
+
+
+###  Description
+Microtus multiplex and M. subterraneus are difficult to distinguish morphologically. Here we have 43 known multiplex voles, 46 known subterraneus voles and a further 199 unidentified voles.
+
+### # Data
+288 Skulls from 2 species of voles  3 measurements on the vole skulls.
+
+### # Group
+a factor with levels 
+-multiplex 
+-subterraneus 
+-unknown
+
+### # Length
+Condylo incisive length or skull length (0.01mm)
+
+### # Height
+Skull height above bullae (0.01mm)
+
+### # Rostrum
+Skull width across rostrum (0.01mm)
+
+###  Details
+89 species have been identified by means of chromosomal analysis.
+
