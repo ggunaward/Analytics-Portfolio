@@ -1,0 +1,61 @@
+package stubs;
+import java.io.IOException;
+
+import org.apache.commons.lang.math.NumberUtils;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.hadoop.mapreduce.lib.input.FileSplit;
+import org.apache.commons.lang.StringUtils;
+
+public class IndexMapper extends Mapper<Text, Text, Text, Text> {
+
+  @Override
+  public void map(Text key, Text value, Context context) throws IOException,
+      InterruptedException {
+
+    /*
+     * TODO implement
+     */
+      //getting the file name
+      FileSplit fileSplit = (FileSplit) context.getInputSplit();
+      Path path = fileSplit.getPath();
+      String fileName = path.getName();
+      //variable declarations
+      String line = value.toString();
+      StringBuffer finalVal = new StringBuffer();
+      String location = "";
+
+      
+      
+      //appending the value part of the key value pair
+      finalVal.append(fileName);
+      finalVal.append('@');
+      finalVal.append(key);
+      
+      
+    for (String word : line.split("\\W+"))
+//      for (String word : line.split("^[a-zA-z0-9]+$"))
+    {
+        if(word.length()>0)
+        {
+
+//            if (StringUtils.isNumeric(word)) {
+//                location = word;
+////                Text finalVal2 = new Text(finalVal.append(location.toString()).toString());
+////                context.write(new Text(word),finalVal2);
+//
+//            }
+//            else
+//            {
+// 
+//                Text finalVal2 = new Text(finalVal.append(location).toString());
+//                context.write(new Text(word),finalVal2);
+//            }
+            context.write(new Text(word),new Text(finalVal.toString()));
+        }
+    }
+      
+      
+  }
+}
