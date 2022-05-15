@@ -1,0 +1,11 @@
+Bloomberg's Mark Gurman today revealed that Apple has been developing new speakers that are equipped with "screens and cameras," suggesting we could see a future HomePod-like device that has a built-in display and camera feature for FaceTiming and other functions.
+Ahead of these rumors, MacRumors contributor Steve Moser was combing through the tvOS 14.5 beta code and found that Apple has added FaceTime and iMessage frameworks, along with a new AVFCapture framework related to capturing images.
+
+You might be wondering what tvOS code has to do with the HomePod, but in April 2020 Apple began using tvOS as the basis for the software that runs on the ?HomePod? rather than iOS. watchOS, tvOS, and the software that runs on the ?HomePod? are all variants of iOS, but each one is differentiated by the device the software is intended to run on with unique interfaces, APIs, and more.
+
+That means features included in tvOS are also included in the ?HomePod? software since they have the same base code. Therefore, the ?FaceTime?, iMessage, and image capture frameworks added to tvOS in tvOS 14.5 could actually be designed for a future ?HomePod? that has a screen and a camera, as described by Gurman.
+The ?HomePod? and HomePod mini are able to use ?FaceTime? audio already, but the ?FaceTime? framework discovered in the 14.5 beta is distinct from any code related to the existing audio ?FaceTime? feature. The frameworks are in the tvOS 14.5 beta and the 14.5 ?HomePod? software beta available to select testers.
+
+Gurman says there is no "imminent launch" planned for the camera-equipped speaker, so it's possible no such product will make an appearance. It's also entirely possible that the iMessage, ?FaceTime?, and AVFCapture frameworks introduced in tvOS 14.5 have an entirely different purpose that may be entirely unrelated to a ?HomePod? and could remain hidden in the code or used for an unspecified feature coming to the Apple TV or the ?HomePod? in the future.
+
+In semi-related news, the 14.5 beta also suggests that Apple could potentially be developing some kind of trivia game for Siri, where ?Siri? could provide trivia questions for users to answer. This is labeled as "?Siri? Edutainment" in the code, but it is not clear if it will be a built-in ?Siri? feature or support for a third-party product.

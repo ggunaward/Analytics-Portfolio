@@ -1,0 +1,7 @@
+A tiny component has the potential to revive a smart-home strategy that has trailed Amazon and Google.
+The Lede
+The HomePod mini speaker, launched last November, has a sensor that measures a room's temperature and humidity. The sensor, 1.5 by 1.5 millimeters in size, is embedded at the bottom of the device's plastic case and currently is not switched on.
+Key Details
+Apple has discussed internally the possibility of using the sensor to connect to other smart home devices such as thermostats and fans to adjust a room's temperature and humidity.
+Apple is currently trailing in the smart-home market, but this dormant capability might allow it to catch up with its competitors, including Amazon's latest Echo speakers, which come with temperature sensors.
+An Apple representative declined to say when the sensor might be enabled for consumers.

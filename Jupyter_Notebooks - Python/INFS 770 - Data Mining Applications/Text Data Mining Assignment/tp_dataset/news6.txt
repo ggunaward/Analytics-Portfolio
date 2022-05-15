@@ -1,0 +1,37 @@
+Health-care analysts welcomed AstraZeneca’s findings of hotly anticipated late-stage U.S. trial results for its Covid-19 vaccine.
+
+The trial of more than 30,000 participants in the U.S., Peru and Chile found that the vaccine had an overall efficacy of 79% in preventing symptomatic Covid and was 100% effective in preventing severe disease and hospitalization.
+Efficacy was consistent across age and ethnic groups, with 80% efficacy in participants at least 65 years old. The vaccine, known as AZD1222 and developed with the University of Oxford, was well-tolerated and the independent data safety monitoring board identified no safety concerns related to the vaccine, the company said Monday.
+
+Data exceeded expectations
+In a research note, Jefferies health-care analyst Peter Welford called the data “surprisingly positive.”
+
+Adam Barker, health-care analyst at Shore Capital, said: “This is arguably the first trial for AZD1222 which has shown compelling efficacy in those 65 years and older”.
+
+This is important because there were questions about efficacy in this age group. Previous studies were hampered by a smaller number of elderly participants. In this trial, 20% of the participants were 65 years or older and 60% had co-morbidities which put them at increased risk of developing severe disease. 
+Monday’s trial data confirmed the safety profile of the vaccine. Barker said because the data is from a single trial using a single-dosing regimen, it removes the complications of data interpretation that has been seen in the past with the AstraZeneca-Oxford vaccine.
+
+Barker added that the lack of evidence for blood clots in the study was also reassuring given recent concerns. “However, we are not surprised by this data given the evidence for a link between the vaccine and blood clots was already fairly weak.”
+
+AstraZeneca said it will continue to analyze the data and prepare for the primary analysis to be submitted to the U.S. Food and Drug Administration for emergency use authorization in coming weeks. The vaccine has already been granted a conditional marketing authorization or emergency use in more than 70 countries across six continents.
+
+Dosing regimen a key question for the FDA
+“I can’t see why the regulator wouldn’t approve it,” Barker wrote, but cautioned that the detailed data was still outstanding. 
+
+One key question for the FDA will be what dosing regimen it will endorse should it ultimately approve the vaccine for emergency use.
+
+“This trial is based on dosing 4 weeks apart, but we know efficacy may be greater if you dose with a longer interval (up to 12 weeks) and countries like the U.K. have successfully used this ‘longer duration between doses’ strategy to vaccinate more people quickly,” Barker said.
+
+So the question for the FDA is whether it will recommend giving the two doses four weeks apart — given that’s what was tested in the U.S. trial — or include data from the U.K. and elsewhere that suggests a longer duration.
+
+Welford also noted the suboptimal dosing regimen used in this trial. “The trial evaluated the 4-week dosing schedule, but we have evidence to suggest the vaccine works better with a longer dosing interval,” he said.
+
+“Primary analysis of the Phase III clinical trials from the U.K., Brazil and South Africa showed 62% efficacy when given the vaccine was given at an interval of 4 to 12 weeks but efficacy increased to 82% when the interval was stretched to 12 weeks.”
+
+Beyond dosing, analysts are also watching for detail on how the vaccine protects against different variants. This is expected to be included in the package of data submitted to the FDA.
+
+When it comes to comparing today’s efficacy data to that from some of the other vaccine-makers, Welford cautioned that since the initial vaccine readouts from Pfizer and Moderna, Covid-19 variants have become increasingly common, so the efficacy data is not directly comparable across the different vaccines.
+
+Barker added that the trial results gave the vaccine important validation. “Given its cost and ease of storage and distribution, AZD1222 was once described as a ‘vaccine for the world’. This is a fair label in our opinion,” he wrote. “Data like this reported today that more conclusively demonstrates the efficacy and safety of AZD1222 is certainly something to celebrate.”
+
+AstraZeneca has pledged to distribute the vaccine at no profit for the duration of the pandemic. The company’s shares traded 2% higher in London on Monday.
