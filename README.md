@@ -8,7 +8,8 @@ This portfolio assignments and projects involving:
 ### Hadoop
 * [Assignment](https://github.com/ggunaward/2022-Portfolio/tree/master/Hadoop/INFS%20774%20-%20Big%20Data%20Analytics)
 ### Pyspark
-* [Assignments](https://github.com/ggunaward/2022-Portfolio/tree/master/Jupyter_Notebooks%20-%20PySpark/INFS%20774%20-%20Big%20Data%20Analytics)
+* [Classification Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20PySpark/INFS%20774%20-%20Big%20Data%20Analytics/Assign5%20-%20Gavin%20Gunawardena.ipynb)
+* [Text Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20PySpark/INFS%20774%20-%20Big%20Data%20Analytics/avgwordlength_Gavin_Gunawardena.ipynb)
 ### Python
 * [Multinomial Classification Team Project](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Milestone3_Var_Sel___Data_Mod_v1_3.ipynb)
   + [Report](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Final%20Report.pdf)
