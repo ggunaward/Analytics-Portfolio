@@ -37,6 +37,7 @@ This portfolio assignments and projects involving:
 * [Vehicle Variable Selection Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Vehicle%20Variable%20Selection%20Assignment/Assignment_1_Gavin_Gunawardena_v1.0.pdf)
 * [Purchase Classification Project](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Purchase%20Classification%20Project/Project%201%20Gavin%20Gunawardena.pdf)
 ### Tableau
-* [Workbooks](https://github.com/ggunaward/2022-Portfolio/tree/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments)
+* [Geographic Data Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments/Assignment%202%20-%20Gavin%20Gunawardena.pdf)
+* [General Data Visualization Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments/Assignment%203%20-%20Gavin%20Gunawardena.pdf)
 ### PowerBI and Tableau
 * [Instant Noodle Data Visualization Group Project](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Final%20Project%20-%20Instant%20Noodle%20Data%20Visualization/Final%20Group%20Project%20v1.pdf)
