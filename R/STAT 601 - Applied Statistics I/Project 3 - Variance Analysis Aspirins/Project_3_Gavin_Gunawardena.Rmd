@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Background
 
-Over the summer I was supporting a chemist who was developing a method using LC-MS/MS (see <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3052391/> for background on liquid chromatography-tandem mass spectrometry (LC-MS/MS).) to analyze the chemical make up of various brands of aspirin.
+Over the summer Dr. Christopher Saunders was supporting a chemist who was developing a method using LC-MS/MS (see <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3052391/> for background on liquid chromatography-tandem mass spectrometry (LC-MS/MS).) to analyze the chemical make up of various brands of aspirin.
 
 At the current stage of development we are simply interested in whether or not there is a difference between the three different brands of aspirin that we have analyzed to date.
 
