@@ -8,6 +8,7 @@ This portfolio includes assignments and projects involving:
 * [Data Warehouse Design Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%203%20-%20Gavin%20Gunawardena%20v1.0.pdf)
 ### Hadoop
 * [Text Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Hadoop/INFS%20774%20-%20Big%20Data%20Analytics/Assignment%203%20-%20Gavin%20Gunawardena.pdf)
+* [Word Count Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Hadoop/INFS%20774%20-%20Big%20Data%20Analytics/Assignment%202/Assignment%202%20-%20Gavin%20Gunawardena.pdf)
 ### Pyspark
 * [Classification Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20PySpark/INFS%20774%20-%20Big%20Data%20Analytics/Assign5%20-%20Gavin%20Gunawardena.ipynb)
 * [Text Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20PySpark/INFS%20774%20-%20Big%20Data%20Analytics/avgwordlength_Gavin_Gunawardena.ipynb)
