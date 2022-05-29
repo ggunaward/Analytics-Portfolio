@@ -35,7 +35,7 @@ This portfolio includes assignments and projects involving:
 * [Statistical Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Assignments/Assignment%206/Gavin.Gunawardena.6-R-v1.pdf)
 * [Data File Processing Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Assignments/Assignment%208/Gavin.Gunawardena.8-R%20v1.pdf)
 ### SAS
-* [Purchase Classification Project](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Purchase%20Classification%20Project/Project%201%20Gavin%20Gunawardena.pdf)
+* [Binomial Classification Project](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Purchase%20Classification%20Project/Project%201%20Gavin%20Gunawardena.pdf)
 * [Vehicle Variable Selection Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Vehicle%20Variable%20Selection%20Assignment/Assignment_1_Gavin_Gunawardena_v1.0.pdf)
 ### Tableau
 * [Storyboard Project](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments/Assignment%203%20-%20Gavin%20Gunawardena.pdf)
