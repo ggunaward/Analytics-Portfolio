@@ -5,7 +5,7 @@ This portfolio includes assignments and projects involving:
 
 ### Databases design
 * [Operational Database Design Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%202%20-%20Gavin%20Gunawardena%20v1.pdf)
-* [Data Warehouse Design Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%203%20-%20Gavin%20Gunawardena%20v1.0.pdf)
+* [Data Warehouse Design and PowerBI Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%203%20-%20Gavin%20Gunawardena%20v1.0.pdf)
 ### Hadoop
 * [Text Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Hadoop/INFS%20774%20-%20Big%20Data%20Analytics/Assignment%203/Assignment%203%20-%20Gavin%20Gunawardena.pdf)
 * [Word Count Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Hadoop/INFS%20774%20-%20Big%20Data%20Analytics/Assignment%202/Assignment%202%20-%20Gavin%20Gunawardena.pdf)
@@ -49,3 +49,4 @@ This portfolio includes assignments and projects involving:
   + [source](https://github.com/ggunaward/2022-Portfolio/tree/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments)
 ### PowerBI and Tableau
 * [Instant Noodle Data Visualization Group Project](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Final%20Project%20-%20Instant%20Noodle%20Data%20Visualization/Final%20Group%20Project%20v1.pdf)
+* [Data Warehouse Design and PowerBI Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%203%20-%20Gavin%20Gunawardena%20v1.0.pdf)
