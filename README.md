@@ -44,11 +44,11 @@ This portfolio includes assignments and projects involving:
 * [Vehicle Variable Selection Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Vehicle%20Variable%20Selection%20Assignment/Assignment_1_Gavin_Gunawardena_v1.0.pdf)
 * Statistical Analysis and Visualization Assignments
   + [ANOVA](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/STAT%20600%20-%20Statistical%20Programming/Assignment%205/Gavin.Gunawardena.5%20-%20SAS%20v1.1.pdf)
-  - [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/STAT%20600%20-%20Statistical%20Programming/Assignment%205/Gavin.Gunawardena.5%20-%20SAS%20v1.1.sas)
+    - [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/STAT%20600%20-%20Statistical%20Programming/Assignment%205/Gavin.Gunawardena.5%20-%20SAS%20v1.1.sas)
   + [Data Grouping and Visualization](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/STAT%20600%20-%20Statistical%20Programming/Assignment%207/Gavin.Gunawardena.7-SAS-v1.2-results.pdf)
-  - [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/STAT%20600%20-%20Statistical%20Programming/Assignment%207/Gavin.Gunawardena.7-SAS-v1.2.sas)
+    - [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/STAT%20600%20-%20Statistical%20Programming/Assignment%207/Gavin.Gunawardena.7-SAS-v1.2.sas)
   + [Probability Distributions](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/STAT%20600%20-%20Statistical%20Programming/Assignment%209/Gavin.Gunawardena.9-SAS-results.pdf)
-  - [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/STAT%20600%20-%20Statistical%20Programming/Assignment%209/Gavin.Gunawardena.9-SAS-code%20v1.1.sas)
+    - [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/STAT%20600%20-%20Statistical%20Programming/Assignment%209/Gavin.Gunawardena.9-SAS-code%20v1.1.sas)
 ### Tableau
 * [Storyboard Project](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments/Assignment%203%20-%20Gavin%20Gunawardena.pdf)
   + [source](https://github.com/ggunaward/2022-Portfolio/tree/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments)
