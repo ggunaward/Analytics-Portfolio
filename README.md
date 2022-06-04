@@ -40,7 +40,7 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
 * [Statistical Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Assignments/Assignment%206/Gavin.Gunawardena.6-R-v1.pdf)
 * [Data File Processing Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Assignments/Assignment%208/Gavin.Gunawardena.8-R%20v1.pdf)
 ### SAS
-* [Binomial Classification Project](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Purchase%20Classification%20Project/Project%201%20Gavin%20Gunawardena.pdf)
+* [Grocery Store Purchase Classification Project](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Purchase%20Classification%20Project/Project%201%20Gavin%20Gunawardena.pdf)
 * [Vehicle Variable Selection Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Vehicle%20Variable%20Selection%20Assignment/Assignment_1_Gavin_Gunawardena_v1.0.pdf)
 * Statistical Analysis and Visualization Assignments:
   + [ANOVA](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/STAT%20600%20-%20Statistical%20Programming/Assignment%205/Gavin.Gunawardena.5%20-%20SAS%20v1.1.pdf)
