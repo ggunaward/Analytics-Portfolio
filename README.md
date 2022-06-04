@@ -1,7 +1,7 @@
 # 2022-Portfolio
 Showcase of assignments and projects I've completed as part of the MS in Analytics from Dakota State University. The portfolio is divided between languages/platforms and further divided by courses.
 
-Table of Contents:
+## Table of Contents:
 
 ### Database design
 * [Operational Database Design Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%202%20-%20Gavin%20Gunawardena%20v1.pdf)
