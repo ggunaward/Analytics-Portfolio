@@ -1,5 +1,5 @@
 # 2022-Portfolio
-Showcase of assignments and projects I've completed as part of the MS in Analytics from Dakota State University. The portfolio is divided between languages/platforms and further divided by courses.
+Showcase of assignments and projects I've completed as part of the MS in Analytics from Dakota State University. The portfolio is divided between languages/platforms and further divided by courses. It is best navigated through the links below as they lead to component of their respective projects/assignments that can be viewed through Github.
 
 ## Table of Contents:
 
