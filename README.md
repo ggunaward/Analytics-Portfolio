@@ -32,7 +32,7 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
   + [Annotated Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%201%20-%20Vole%20Classification/Project-1-Annotated-Code-Gavin-Gunawardena%20v1.1.pdf)
 * [Variance Analysis of Aspirins Project](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_v1_Gavin_Gunawardena.pdf)
   + [Annotated Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_Annotated_Code_Gavin_Gunawardena.pdf)
-* Mixed Effects Models Project
+* Mixed Effects Models Typing Dynamics Project
   + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204_STAT_601%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
   + [White Paper](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204%20White%20Paper%20-%20Gavin%20Gunawardena.pdf) 
   + [Annotated Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204%20Annotated%20Code%20-%20Gavin%20Gunawardena.pdf)
