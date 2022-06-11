@@ -25,6 +25,9 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
   + [Dataframes and Dicts](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20772%20-%20Data%20Analytics%20Programming%20Basics/Assignment%202%20-%20Gavin%20Gunawardena.ipynb)
   + [Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20772%20-%20Data%20Analytics%20Programming%20Basics/Assignment%203%20-%20Gavin%20Gunawardena.ipynb)
   + [Keras Neural Network](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20772%20-%20Data%20Analytics%20Programming%20Basics/Assignment%204%20-%20Gavin%20Gunawardena.ipynb)
+  + [Scikit Learn Neural Networks](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Assignments/Assignment%203%20-%20Gavin%20Gunawardena.ipynb)
+  + [Decision Trees](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Assignments/Assignment%202%20Gavin%20Gunawardena%20v1.ipynb)
+  + [Support Vector Machines](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Assignments/Assignment%204%20-%20Gavin%20Gunawardena%20v1.ipynb)
 ### R
 * [Agriculture Causal Analysis Project](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Final%20Project%20-%20Causal%20Analysis%20on%20Farm%20Harvests/Gavin.Gunawardena.Final-Project-R-v1.pdf)
   + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Final%20Project%20-%20Causal%20Analysis%20on%20Farm%20Harvests/Gavin.Gunawardena.Final%20Project-R-v1.Rmd)
