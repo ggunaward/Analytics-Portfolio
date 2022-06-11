@@ -42,10 +42,11 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
   + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Midterm%20Project%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
   + [White Paper](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Midterm%20Project%20-%20Gavin%20Gunawardena.pdf) 
   + [Annotated Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Stat-602-Midterm-Annotated-Code---Gavin-Gunawardena.pdf)
-* [Statistical Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Assignments/Assignment%206/Gavin.Gunawardena.6-R-v1.pdf)
-* [Data File Processing Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Assignments/Assignment%208/Gavin.Gunawardena.8-R%20v1.pdf)
-* [Gaussian Model-based clustering Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Gaussian%20Model-based%20clustering%20Assignment/Homework%204.pdf)
-* [Mixed Effects Models Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Mixed%20Effects%20Model%20Assignment/Homework%209.pdf)
+* Statistical Analysis Assignments
+  + [Statistical Analysis](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Assignments/Assignment%206/Gavin.Gunawardena.6-R-v1.pdf)
+  + [Data File Processing](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Assignments/Assignment%208/Gavin.Gunawardena.8-R%20v1.pdf)
+  + [Gaussian Model-based Clustering](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Gaussian%20Model-based%20clustering%20Assignment/Homework%204.pdf)
+  + [Mixed Effects Models](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Mixed%20Effects%20Model%20Assignment/Homework%209.pdf)
 ### SAS
 * [Grocery Store Purchase Classification Project](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Purchase%20Classification%20Project/Project%201%20Gavin%20Gunawardena.pdf)
 * [Vehicle Variable Selection Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Vehicle%20Variable%20Selection%20Assignment/Assignment_1_Gavin_Gunawardena_v1.0.pdf)
