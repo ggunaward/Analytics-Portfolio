@@ -3,15 +3,6 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
 
 ## Table of Contents:
 
-### Database design
-* [Operational Database Design Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%202%20-%20Gavin%20Gunawardena%20v1.pdf)
-* [Data Warehouse Design and PowerBI Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%203%20-%20Gavin%20Gunawardena%20v1.0.pdf)
-### Hadoop
-* [Text Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Hadoop/INFS%20774%20-%20Big%20Data%20Analytics/Assignment%203/Assignment%203%20-%20Gavin%20Gunawardena.pdf)
-* [Word Count Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Hadoop/INFS%20774%20-%20Big%20Data%20Analytics/Assignment%202/Assignment%202%20-%20Gavin%20Gunawardena.pdf)
-### Pyspark
-* [Classification Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20PySpark/INFS%20774%20-%20Big%20Data%20Analytics/Assign5%20-%20Gavin%20Gunawardena.ipynb)
-* [Text Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20PySpark/INFS%20774%20-%20Big%20Data%20Analytics/avgwordlength_Gavin_Gunawardena.ipynb)
 ### Python
 * [Multinomial Classification Group Project](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Milestone3_Var_Sel___Data_Mod_v1_3.ipynb)
   + [Report](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Final%20Report.pdf)
@@ -62,6 +53,15 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
   + [source](https://github.com/ggunaward/2022-Portfolio/tree/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments)
 * [Geographic Data Visualization Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments/Assignment%202%20-%20Gavin%20Gunawardena.pdf)
   + [source](https://github.com/ggunaward/2022-Portfolio/tree/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments)
-### PowerBI and Tableau
+### PowerBI
 * [Instant Noodle Data Visualization Group Project](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Final%20Project%20-%20Instant%20Noodle%20Data%20Visualization/Final%20Group%20Project%20v1.pdf)
 * [Data Warehouse Design and PowerBI Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%203%20-%20Gavin%20Gunawardena%20v1.0.pdf)
+### Hadoop
+* [Text Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Hadoop/INFS%20774%20-%20Big%20Data%20Analytics/Assignment%203/Assignment%203%20-%20Gavin%20Gunawardena.pdf)
+* [Word Count Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Hadoop/INFS%20774%20-%20Big%20Data%20Analytics/Assignment%202/Assignment%202%20-%20Gavin%20Gunawardena.pdf)
+### Pyspark
+* [Classification Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20PySpark/INFS%20774%20-%20Big%20Data%20Analytics/Assign5%20-%20Gavin%20Gunawardena.ipynb)
+* [Text Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20PySpark/INFS%20774%20-%20Big%20Data%20Analytics/avgwordlength_Gavin_Gunawardena.ipynb)
+### Database design
+* [Operational Database Design Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%202%20-%20Gavin%20Gunawardena%20v1.pdf)
+* [Data Warehouse Design and PowerBI Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%203%20-%20Gavin%20Gunawardena%20v1.0.pdf)
