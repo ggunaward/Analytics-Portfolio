@@ -4,8 +4,8 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
 ## Table of Contents:
 
 ### Python
-* [Multinomial Classification Group Project (Personally completed: Dummy Coding, Model Building, Hyperparameter Tuning, Model Results, Running Models on unlabeled dataset, and their respective written sections in report)](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Milestone3_Var_Sel___Data_Mod_v1_4.ipynb)
-  + [Report](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Final%20Report%201.1.pdf)
+* [Multinomial Classification Group Project (Personally completed: Dummy Encoding, Model Building, Hyperparameter Tuning, Model Results, Running Models on unlabeled dataset, and their respective written sections in report)](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Milestone3_Var_Sel___Data_Mod_v1_5.ipynb)
+  + [Report](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Final%20Report%201.2.pdf)
 * [Classification Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Classification%20Assignment/770_hw1_Gunawardena.ipynb)
 * [Recommmender System Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Recommender%20System%20Assignment/770_hw2_Gunawardena.ipynb)
 * [Social Network Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Social%20Network%20Analysis%20Assignment/770_hw5_gunawardena.ipynb)
