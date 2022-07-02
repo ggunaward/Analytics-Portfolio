@@ -26,19 +26,24 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
 ### R
 * [Agriculture Causal Analysis Project](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Final%20Project%20-%20Causal%20Analysis%20on%20Farm%20Harvests/Gavin.Gunawardena.Final-Project-R-v1.pdf)
   + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Final%20Project%20-%20Causal%20Analysis%20on%20Farm%20Harvests/Gavin.Gunawardena.Final%20Project-R-v1.Rmd)
+  + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/R/STAT%20600%20-%20Statistical%20Programming/Final%20Project%20-%20Causal%20Analysis%20on%20Farm%20Harvests)
 * [Vole Classification Project](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%201%20-%20Vole%20Classification/Project_1_Gavin_Gunawardena%20v1.1.pdf)
   + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%201%20-%20Vole%20Classification/Project_1_Gavin_Gunawardena.Rmd)
+  + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%201%20-%20Vole%20Classification)
 * [Variance Analysis of Aspirins Project](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_v1_Gavin_Gunawardena.pdf)
   + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_Gavin_Gunawardena.Rmd)
+  + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins)
 * Mixed Effects Models Typing Dynamics Project
   + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204_STAT_601%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
   + [White Paper](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204%20White%20Paper%20-%20Gavin%20Gunawardena.pdf) 
-  + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project_4_Gavin_Gunawardena.Rmd)
   + [Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204%20Code%20Output.pdf)
+  + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project_4_Gavin_Gunawardena.Rmd)
+  + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics)
 * Bean Classification Project
   + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Midterm%20Project%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
   + [White Paper](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Midterm%20Project%20-%20Gavin%20Gunawardena.pdf) 
   + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Stat%20602%20Midterm%20-%20Gavin%20Gunawardena.Rmd)
+  + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds)
 * Statistical Analysis Assignments:
   + [Statistical Calculations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Assignments/Assignment%206/Gavin.Gunawardena.6-R-v1.pdf)
   + [Data File Processing](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Assignments/Assignment%208/Gavin.Gunawardena.8-R%20v1.pdf)
@@ -46,7 +51,9 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
   + [Mixed Effects Models](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Mixed%20Effects%20Model%20Assignment/Homework%209.pdf)
 ### SAS
 * [Grocery Store Purchase Classification Project](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Purchase%20Classification%20Project/Project%201%20Gavin%20Gunawardena.pdf)
+  + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/SAS/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Purchase%20Classification%20Project)
 * [Vehicle Variable Selection Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Vehicle%20Variable%20Selection%20Assignment/Assignment_1_Gavin_Gunawardena_v1.0.pdf)
+  + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/SAS/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Vehicle%20Variable%20Selection%20Assignment)
 * Statistical Analysis and Visualization Assignments:
   + [ANOVA](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/STAT%20600%20-%20Statistical%20Programming/Assignment%205/Gavin.Gunawardena.5%20-%20SAS%20v1.1.pdf)
     - [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/STAT%20600%20-%20Statistical%20Programming/Assignment%205/Gavin.Gunawardena.5%20-%20SAS%20v1.1.sas)
