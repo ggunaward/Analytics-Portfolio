@@ -21,18 +21,18 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
 * [Agriculture Causal Analysis Project](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Final%20Project%20-%20Causal%20Analysis%20on%20Farm%20Harvests/Gavin.Gunawardena.Final-Project-R-v1.pdf)
   + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Final%20Project%20-%20Causal%20Analysis%20on%20Farm%20Harvests/Gavin.Gunawardena.Final%20Project-R-v1.Rmd)
 * [Vole Classification Project](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%201%20-%20Vole%20Classification/Project_1_Gavin_Gunawardena%20v1.1.pdf)
-  + [Annotated Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%201%20-%20Vole%20Classification/Project-1-Annotated-Code-Gavin-Gunawardena%20v1.1.pdf)
+  + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%201%20-%20Vole%20Classification/Project_1_Gavin_Gunawardena.Rmd)
 * [Variance Analysis of Aspirins Project](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_v1_Gavin_Gunawardena.pdf)
-  + [Annotated Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_Annotated_Code_Gavin_Gunawardena.pdf)
+  + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_Gavin_Gunawardena.Rmd)
 * Mixed Effects Models Typing Dynamics Project
   + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204_STAT_601%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
   + [White Paper](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204%20White%20Paper%20-%20Gavin%20Gunawardena.pdf) 
-  + [Annotated Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204%20Annotated%20Code%20-%20Gavin%20Gunawardena.pdf)
+  + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project_4_Gavin_Gunawardena.Rmd)
   + [Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204%20Code%20Output.pdf)
 * Bean Classification Project
   + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Midterm%20Project%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
   + [White Paper](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Midterm%20Project%20-%20Gavin%20Gunawardena.pdf) 
-  + [Annotated Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Stat-602-Midterm-Annotated-Code---Gavin-Gunawardena.pdf)
+  + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Stat%20602%20Midterm%20-%20Gavin%20Gunawardena.Rmd)
 * Statistical Analysis Assignments:
   + [Statistical Calculations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Assignments/Assignment%206/Gavin.Gunawardena.6-R-v1.pdf)
   + [Data File Processing](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20600%20-%20Statistical%20Programming/Assignments/Assignment%208/Gavin.Gunawardena.8-R%20v1.pdf)
