@@ -6,11 +6,17 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
 ### Python
 * [Multinomial Classification Group Project (Personally completed: Dummy Encoding, Model Building, Hyperparameter Tuning, Model Results, Running Models on unlabeled dataset, and their respective written sections in report)](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Milestone3_Var_Sel___Data_Mod_v1_5.ipynb)
   + [Report](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Final%20Report%201.2.pdf)
+  + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project)
 * [Classification Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Classification%20Assignment/770_hw1_Gunawardena.ipynb)
+  + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Classification%20Assignment)
 * [Recommmender System Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Recommender%20System%20Assignment/770_hw2_Gunawardena.ipynb)
+  + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Recommender%20System%20Assignment)
 * [Social Network Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Social%20Network%20Analysis%20Assignment/770_hw5_gunawardena.ipynb)
+  + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Social%20Network%20Analysis%20Assignment)
 * [Text Data Mining Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Text%20Data%20Mining%20Assignment/770_hw3_gunawardena.ipynb)
+  + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Text%20Data%20Mining%20Assignment)
 * [Text Data Mining and PCA Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Text%20Data%20Mining%20and%20PCA%20Assignment/770_hw4_gunawardena.ipynb)
+  + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Text%20Data%20Mining%20and%20PCA%20Assignment)
 * Basic Analytics Programming Assignments:
   + [Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20772%20-%20Data%20Analytics%20Programming%20Basics/Assignment%203%20-%20Gavin%20Gunawardena.ipynb)
   + [Keras Neural Network](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20772%20-%20Data%20Analytics%20Programming%20Basics/Assignment%204%20-%20Gavin%20Gunawardena.ipynb)
