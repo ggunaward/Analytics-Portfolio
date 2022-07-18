@@ -232,7 +232,7 @@ kable1
 
 
 ### Model Selection and Analysis
-	Here, I ended up testing quite a few minor modifications to my base chosen model of “ChromosomalIDBinary ~ IncisiveOrSkullLength + SkullHeight + SkullWidth” but ended up sticking with the base form after finding that it was obtaining the most consistently high accuracy rate during multiple cross validation tests. Furthermore, after looking through the advantages and disadvantages of the different types of cross validation methods for testing a model, I ended up settling on Repeated 10 times – Leave One Out Cross Validation. This model’s biggest disadvantage compared to other versions of cross validation is that it’s very hardware intensive, but I chose it since the dataset is small and thus it wouldn’t matter if the method was hardware intensive.
+	Here, I ended up testing quite a few minor modifications to my base chosen model of “ChromosomalIDBinary ~ IncisiveOrSkullLength + SkullHeight + SkullWidth” but ended up sticking with the base form after finding that it was obtaining the most consistently high accuracy rate during multiple cross validation tests. Furthermore, after looking through the advantages and disadvantages of the different types of cross validation methods for testing a model, I ended up settling on 10 fold Cross Validation. This validation method's biggest disadvantage compared to other validation methods is that it’s very hardware intensive, but I chose it since the dataset is small and thus it wouldn’t matter if the method was hardware intensive.
 
 ```{r,echo=FALSE,message=FALSE,warning=FALSE}
 # Set so that long lines in R will be wrapped:
