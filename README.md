@@ -79,3 +79,6 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
 ### Database design
 * [Operational Database Design Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%202%20-%20Gavin%20Gunawardena%20v1.pdf)
 * [Data Warehouse Design and PowerBI Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%203%20-%20Gavin%20Gunawardena%20v1.0.pdf)
+### Excel
+* [K Nearest Neighbor Calculations and Visualization](https://github.com/ggunaward/2022-Portfolio/blob/master/Excel/INFS%20768%20-%20Predictive%20Analytics/Quizzes/Quiz%201.xlsx)
+* [Support Vector Machine Calculations and Visualization](https://github.com/ggunaward/2022-Portfolio/blob/master/Excel/INFS%20768%20-%20Predictive%20Analytics/Quizzes/Quiz%204.xlsx)
