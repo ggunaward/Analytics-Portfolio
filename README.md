@@ -80,5 +80,7 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
 * [Operational Database Design Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%202%20-%20Gavin%20Gunawardena%20v1.pdf)
 * [Data Warehouse Design and PowerBI Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%203%20-%20Gavin%20Gunawardena%20v1.0.pdf)
 ### Excel
-* [K Nearest Neighbor Calculations and Visualization](https://github.com/ggunaward/2022-Portfolio/blob/master/Excel/INFS%20768%20-%20Predictive%20Analytics/Quizzes/Quiz%201.xlsx)
-* [Support Vector Machine Calculations and Visualization](https://github.com/ggunaward/2022-Portfolio/blob/master/Excel/INFS%20768%20-%20Predictive%20Analytics/Quizzes/Quiz%204.xlsx)
+* [K Nearest Neighbor Calculations and Visualization](https://www.dropbox.com/s/xcxlx1ugzxn45k4/Quiz%201.xlsx?dl=0)
+  + [Mirror](https://github.com/ggunaward/2022-Portfolio/blob/master/Excel/INFS%20768%20-%20Predictive%20Analytics/Quizzes/Quiz%201.xlsx)
+* [Support Vector Machine Calculations and Visualization](https://www.dropbox.com/s/3oueli4p59f5ex9/Quiz%204.xlsx?dl=0)
+  + [Mirror](https://github.com/ggunaward/2022-Portfolio/blob/master/Excel/INFS%20768%20-%20Predictive%20Analytics/Quizzes/Quiz%204.xlsx)
