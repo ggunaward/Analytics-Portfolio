@@ -129,11 +129,13 @@ PasswordDataEA1.3.df <- PasswordDataEA1.3.df %>%
 #Visualizations
 #This box plot shows the difference in total time spent to type the password between the first and last repetition per session to show what improvement is seen within each session by each subject
 boxplot(PasswordDataEA1.2.df$DiffBtwnLastFirst, density = 20,
+        boxwex = 0.5, col = c("orange"),
         legend.text = rownames(PasswordDataEA1.2.df$subject), horizontal = TRUE, xlab = "Difference in Total Time Spent per Repetition (seconds)", ylab = "Subjects")
-title(main = list("Average Improvement in Time Spent Between First and Last Sessions (repetitions per session were averaged)", font = 4))
+title(main = list("Average Improvement in Time Spent Between First and Last Sessions (repetitions per session were averaged)", font = 4), )
+
 
 #This box plot shows the average difference in total time spent to type the password between the first and last session of each subject
-boxplot(PasswordDataEA1.3.df$DiffBtwnLastFirst, density = 20,
+boxplot(PasswordDataEA1.3.df$DiffBtwnLastFirst, density = 20, col = c("lime green"),
         legend.text = rownames(PasswordDataEA1.3.df), horizontal = TRUE, xlab = "Difference in Total Time Spent (seconds)", ylab = "Subjects")
 title(main = list("Average Improvement in Time Spent Between First and Last Repetitions per Session", font = 4))
 
