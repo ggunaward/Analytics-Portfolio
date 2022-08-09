@@ -30,7 +30,10 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
 * [Vole Classification Project](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%201%20-%20Vole%20Classification/Project_1_Gavin_Gunawardena%20v1.1.pdf)
   + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%201%20-%20Vole%20Classification/Project_1_Gavin_Gunawardena.Rmd)
   + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%201%20-%20Vole%20Classification)
-* [Variance Analysis of Aspirins Project](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_v1_Gavin_Gunawardena.pdf)
+* Variance Analysis of Aspirins Project
+* [Variance Analysis of Aspirins Project]
+  + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204_STAT_601%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
+  + [White Paper with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204%20White%20Paper%20-%20Gavin%20Gunawardena.pdf) 
   + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_Gavin_Gunawardena.Rmd)
   + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins)
 * Mixed Effects Models Typing Dynamics Project
