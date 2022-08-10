@@ -143,7 +143,7 @@ title(main = list("Average Improvement in Time Spent Between First and Last Repe
 
 #This histogram with overlayed density plot shows the distribution of data and whether the Response Variable makes up a normal distribution
 ggplot(PasswordDataEA1.df, aes(x=TotalTime)) +
-            geom_histogram(aes(y = ..density..), binwidth=.25, colour="black", fill="white") +
+            geom_histogram(aes(y = ..density..), binwidth=.25, colour="black", fill="light blue") +
             stat_function(fun = dnorm, lwd = 2, col = 'red', 
                           args = list(mean = mean(PasswordDataEA1.df$TotalTime), sd = sd(PasswordDataEA1.df$TotalTime)))  +
     labs(title = "Distribution of the response Variable (Total Time)")

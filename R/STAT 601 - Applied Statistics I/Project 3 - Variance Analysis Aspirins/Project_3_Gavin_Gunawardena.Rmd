@@ -375,7 +375,7 @@ summary(res.aov)
  pairwise.t.test(Aliquots_AUP.No.Outliers$AUP, Aliquots_AUP.No.Outliers$Brand, p.adjust.method="none")
  
  #Create a table with the results
- Results_Table <- data.frame(Brand=c('Brand - With Outliers', 'Brand - w/o Outliers', 'P.V. vs Bayer - With Outliers','Wal vs Bayer - With Outliers','Wal vs P.V. - With Outliers', 'P.V. vs Bayer - w/o Outliers','Wal vs Bayer - w/o Outliers','Wal vs P.V - w/o Oultiers'),AoV_P_Value=c(0.973,0.729,'','','','','',''),
+ Results_Table <- data.frame(Brand=c('Brand - With Outliers', 'Brand - w/o Outliers', 'P.V. vs Bayer - With Outliers','Wal vs Bayer - With Outliers','Wal vs P.V. - With Outliers', 'P.V. vs Bayer - w/o Outliers','Wal vs Bayer - w/o Outliers','Wal vs P.V - w/o Outliers'),AoV_P_Value=c(0.973,0.729,'','','','','',''),
                  Pairwise_T_Test_P_Value = c('','',0.85,0.98,0.83,0.53,0.46,0.91)
   )
 
@@ -444,7 +444,7 @@ Aliquots_AUP.No.Outliers %>%
   )
 
 #Display the P values in a results table:
-Results_Table <- data.frame(Brand=c('P.V. vs Bayer - With Outliers','Wal vs Bayer - With Outliers','Wal vs P.V. - With Outliers', 'P.V. vs Bayer - w/o Outliers','Wal vs Bayer - w/o Outliers','Wal vs P.V - w/o Oultiers'),Tukey_Kramer=c(0.489,0.984,0.389,0.078,0.030,0.924),
+Results_Table <- data.frame(Brand=c('P.V. vs Bayer - With Outliers','Wal vs Bayer - With Outliers','Wal vs P.V. - With Outliers', 'P.V. vs Bayer - w/o Outliers','Wal vs Bayer - w/o Outliers','Wal vs P.V - w/o Outliers'),Tukey_Kramer=c(0.489,0.984,0.389,0.078,0.030,0.924),
                  Bonferroni = c(0.818,0.887,0.118,0.140,0.132,0.624)
   )
 
