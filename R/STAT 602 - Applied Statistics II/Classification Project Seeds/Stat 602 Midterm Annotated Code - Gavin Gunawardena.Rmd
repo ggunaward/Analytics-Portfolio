@@ -76,7 +76,9 @@ output:
   *Source: (James, Witten, Hastie, & Tibshirani, 2021)*
 
 ##Initial Data and calculation functions
-```{r}
+```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
+#Suppress warnings
+options(warn=-1)
 #Install packages necessary for the project
 #http://www.salemmarafi.com/code/install-r-package-automatically/
 usePackage <- function(p) {
@@ -309,11 +311,11 @@ print(bean_column_descriptions.df)
 ```
 
 #Exploratory Analysis
-```{r}
+```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
+#Suppress warnings
+options(warn=-1)
 #Check distribution between classes and look for class imbalance
 #https://www.statology.org/r-frequency-table-by-group/
-
-# import_plex_sans()
 
 beanCounts <- SeedDataInitial.df %>%
   group_by(Class) %>%
@@ -401,7 +403,9 @@ for (bean_ in unique(SeedDataLong.df$Class)){
 
 
 ##  Remove  Outliers
-```{r}
+```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
+#Suppress warnings
+options(warn=-1)
 
 
 # Run function to remove outliers
@@ -413,7 +417,9 @@ SeedDataNoOutliers.df <- remove_outliers_beans_dataset(SeedDataNoOutliers.df)
 ```
 ## View Exploratory Analysis after outlier removal
 
-```{r}
+```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
+#Suppress warnings
+options(warn=-1)
 
 # View bean counts per category
 print(SeedCountsNoOutliers <- SeedDataNoOutliers.df %>%
@@ -465,7 +471,9 @@ After removing the outliers, the dataset has been reduced from 3000 observations
 # Predictive Analysis
 
 ## Numeric dependent variable conversion
-```{r}
+```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
+#Suppress warnings
+options(warn=-1)
 #Update Dataset to have a numeric version of response variable via the  beanKey.df dataframe
 SeedDataNumeric.df <- convert.class.to.classID(SeedDataNoOutliers.df, BeanKey.df)
 
@@ -474,7 +482,9 @@ SeedDataNumeric.df <- convert.class.to.classID(SeedDataNoOutliers.df, BeanKey.df
 
 
 ## Data Split
-```{r}
+```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
+#Suppress warnings
+options(warn=-1)
 
 # Split dataset 80/20
 set.seed (10)
@@ -486,7 +496,9 @@ tst.dat=SeedDataNumeric.df[-rows.trn,]
 ```
 
 ## Normalization/Standardization
-```{r}
+```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
+#Suppress warnings
+options(warn=-1)
 # Normalize the data
 
 #Store normalization parameters of mean and standard deviation for use on the test dataset later
@@ -525,7 +537,9 @@ tst.norm.dat$Extent <- ZScore.Solve(tst.dat$Extent, NormalizationParams["Extent"
 ```
 
 ## Feature Selection
-```{r}
+```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
+#Suppress warnings
+options(warn=-1)
 
 # Run best subset selection
 regfit.full<-regsubsets(ClassID ~.,data=trn.norm.dat,nvmax = 7)
@@ -554,7 +568,9 @@ formulaVarOrig <- as.formula("ClassID ~ Area + Eccentricity  + ConvexArea + Exte
 
 ## Statistical Models
 Multinomial Logistic Regression
-```{r}
+```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
+#Suppress warnings
+options(warn=-1)
 defaultW <- getOption("warn")
 options(warn = -1)
 #Found compatible loocv code here; https://www.r-bloggers.com/2015/09/predicting-creditability-using-logistic-regression-in-r-cross-validating-the-classifier-part-2-2/
@@ -594,7 +610,9 @@ print(LogConfusionMatrix <- confusionMatrix(data = convert.classID.to.class.2.fa
 ```
 
 Linear Discriminant Analysis
-```{r}
+```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
+#Suppress warnings
+options(warn=-1)
 
 #Run Linear Discriminant Analysis with loocv
 acc <- NULL
@@ -631,7 +649,9 @@ print(LdaConfusionMatrix <- confusionMatrix(data = convert.classID.to.class.2.fa
 
 ```
 KNN Classifier
-```{r}
+```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
+#Suppress warnings
+options(warn=-1)
 #Run K Nearest Neighbors with loocv
 acc <- NULL
 resultsKnnModel <- factor(rep(1,length(trn.norm.dat)),levels=seq(1,6))
@@ -666,7 +686,9 @@ print(KnnConfusionMatrix <- confusionMatrix(data = convert.classID.to.class.2.fa
 
 ```
 Quadratic Discriminant Analysis
-```{r}
+```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
+#Suppress warnings
+options(warn=-1)
 #Run Quadratic Discriminant Analysis with loocv
 acc <- NULL
 resultsQdaModel <- factor(rep(1,length(trn.norm.dat)),levels=seq(1,6))
@@ -702,7 +724,9 @@ print(QdaConfusionMatrix <- confusionMatrix(data = convert.classID.to.class.2.fa
 
 ```
 Naive Bayes
-```{r}
+```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
+#Suppress warnings
+options(warn=-1)
 
 #Run Naive Bayes model with loocv
 acc <- NULL
@@ -740,7 +764,9 @@ print(NbConfusionMatrix <- confusionMatrix(data = convert.classID.to.class.2.fac
 options(warn = defaultW)
 ```
 Running the best models on a test dataset to get the final accuracy rate
-```{r}
+```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
+#Suppress warnings
+options(warn=-1)
 # Multinomial Logistic Regression and Linear Discriminant Analysis
 
 # #Setup for KNN Classifier
@@ -815,7 +841,10 @@ datatable(ValidationResultsDisplay.df) %>% formatStyle(
   The results of testing the models on the validation dataset via leave one out cross validation were that the most accurate models were multinomial logistic regression and Quadratic Discriminant Analysis as both had accuracy rates over 91%. The model with the lowest weight differential between predictions and actual values was K Nearest Neighbors. The model with the lowest cost differential between predictions and actual values was Linear Discriminant Analysis. Thus, the multinomial logistic regression model as well as the Linear Discriminant Analysis model were both chosen to be run on the test dataset to get final prediction values as they are both superior in different measures and to simplify the results, accuracy and cost differential  were prioritized.
 
   Results of the 2 top chosen models, multinomial logistic regression and linear discriminant analysis, from the validation dataset when run on the normalized test dataset.:
-```{r}
+```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
+#Suppress warnings
+options(warn=-1)
+
 Model_Name <- c('Multinomial Logistic Regression', 'Linear Discriminant Analysis')
 Accuracy_Rates <- c(FinalLogConfusion$overall['Accuracy'],FinalLdaConfusion$overall['Accuracy'])
 Bean_Weights <- c(FinalLogBeanWeightDiff,FinalLdaBeanWeightDiff)
