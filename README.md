@@ -3,6 +3,15 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
 
 ## Table of Contents:
 
+### Highlighted Projects
+* [Hopital Stay Length Multinomial Classification Group Project (Personally completed: Dummy Encoding, Model Building, Hyperparameter Tuning, Model Results, Running Models on unlabeled dataset, and their respective written sections in report)](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Milestone3_Var_Sel___Data_Mod_v1_5.ipynb)
+* Bean Classification Project
+  + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Midterm%20Project%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
+* Variance Analysis of Aspirins Project
+  + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_Powerpoint_Gavin_Gunawardena.pdf)
+* Mixed Effects Models Typing Dynamics Project
+  + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204_STAT_601%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
+  
 ### Python
 * [Hopital Stay Length Multinomial Classification Group Project (Personally completed: Dummy Encoding, Model Building, Hyperparameter Tuning, Model Results, Running Models on unlabeled dataset, and their respective written sections in report)](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Milestone3_Var_Sel___Data_Mod_v1_5.ipynb)
   + [Report](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Final%20Report%201.2.pdf)
