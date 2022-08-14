@@ -2,6 +2,7 @@
 Showcase of assignments and projects I've completed as part of the MS in Analytics from Dakota State University. The portfolio is divided between languages/platforms and further divided by courses. This is best navigated through the links below as they lead to components of their respective projects/assignments that can be viewed through Github.
 
 ## Table of Contents:
+####  *Everything has been tested to work. If something doesn't load, which is common with the PDFs, just refresh the page and it should load.*
 
 ### Highlighted Projects
 * [Hopital Stay Length Multinomial Classification Group Project (Personally completed: Dummy Encoding, Model Building, Hyperparameter Tuning, Model Results, Running Models on unlabeled dataset, and their respective written sections in report)](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Milestone3_Var_Sel___Data_Mod_v1_5.ipynb)
