@@ -17,7 +17,8 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
   + [Tableau Public](https://public.tableau.com/app/profile/gavin4523/viz/FactorstoConsiderWhenTakingaJob-Storyboard/Story)
   
 ### Python
-* [Hopital Stay Length Multinomial Classification Group Project (Personally completed: Dummy Encoding, Model Building, Hyperparameter Tuning, Model Results, Running Models on unlabeled dataset, and their respective written sections in report)](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Milestone3_Var_Sel___Data_Mod_v1_5.ipynb)
+* Hopital Stay Length Multinomial Classification Group Project (Personally completed: Dummy Encoding, Model Building, Hyperparameter Tuning, Model Results, Running Models on unlabeled dataset, and their respective written sections in report)
+  + [Jupyter Notebook](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Milestone3_Var_Sel___Data_Mod_v1_5.ipynb)
   + [Report](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Final%20Report%201.2.pdf)
   + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project)
 * [Classification Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Classification%20Assignment/770_hw1_Gunawardena.ipynb)
