@@ -6,6 +6,8 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
 
 ### Highlighted Projects
 * [Hopital Stay Length Multinomial Classification Group Project (Personally completed: Dummy Encoding, Model Building, Hyperparameter Tuning, Model Results, Running Models on unlabeled dataset, and their respective written sections in report)](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Group%20Project/Milestone3_Var_Sel___Data_Mod_v1_5.ipynb)
+* Employment Dataset Visualization Project
+  + [Tableau Public](https://public.tableau.com/app/profile/gavin4523/viz/FactorstoConsiderWhenTakingaJob-Storyboard/Story)
 * Bean Classification Project
   + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Midterm%20Project%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
 * Variance Analysis of Aspirins Project
@@ -74,7 +76,11 @@ Showcase of assignments and projects I've completed as part of the MS in Analyti
   + [Probability Distributions](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/STAT%20600%20-%20Statistical%20Programming/Assignment%209/Gavin.Gunawardena.9-SAS-results.pdf)
     - [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/STAT%20600%20-%20Statistical%20Programming/Assignment%209/Gavin.Gunawardena.9-SAS-code%20v1.1.sas)
 ### Tableau
-* [Storyboard Project](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments/Assignment%203%20-%20Gavin%20Gunawardena.pdf)
+* Employment Dataset Project
+  + [Tableau Public](https://public.tableau.com/app/profile/gavin4523/viz/FactorstoConsiderWhenTakingaJob-Storyboard/Story)
+  + [Storyboard PDF](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments/Project%20-%20Storyboard%20-%20Gavin%20Gunawardena.pdf)
+  + [Dashboard 1 PDF](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments/Project%20Dashboard%201%20-%20Gavin%20Gunawardena.pdf)
+  + [Dashboard 2 PDF](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments/Project%20Dashboard%202%20-%20Gavin%20Gunawardena.pdf)
   + [source](https://github.com/ggunaward/2022-Portfolio/tree/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments)
 * [Geographic Data Visualization Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments/Assignment%202%20-%20Gavin%20Gunawardena.pdf)
   + [source](https://github.com/ggunaward/2022-Portfolio/tree/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments)
