@@ -1,0 +1,125 @@
+[33m92fdb56[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m HEAD@{0}: reset: moving to 92fdb56b38f05768da1fd9b2556ac1ed76970d50
+[33m7f82398[m HEAD@{1}: commit: Keeping the notebooks under 100 mb
+[33m345ef45[m HEAD@{2}: reset: moving to 345ef4540100fcf8a69cd3cb93700eac97ca7620
+[33m3c284d6[m HEAD@{3}: commit: Fixing merge conflicts
+[33m345ef45[m HEAD@{4}: reset: moving to 345ef4540100fcf8a69cd3cb93700eac97ca7620
+[33me50ebc3[m HEAD@{5}: commit: Fix for Jupyter Notebook size issue.
+[33mb89cf51[m HEAD@{6}: commit: Lowering file size of Jupyter notebook by commenting out an unneeded chart.
+[33md47b133[m HEAD@{7}: commit: Small update to get around Github's filesize limit.
+[33m345ef45[m HEAD@{8}: commit: Updates to INFS 768 multinomial logistic regression project. Complete revamp, replacing everything done by rest of group.
+[33m92fdb56[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m HEAD@{9}: commit: Signed-off-by: crattik <ggunaward@gmail.com>
+[33m53cae21[m HEAD@{10}: commit: Update of Tableau assignment 3
+[33mb880135[m HEAD@{11}: commit: Signed-off-by: crattik <ggunaward@gmail.com>
+[33md118460[m HEAD@{12}: merge d1184601a4b4c147940b84b981ce4a0715644156: Fast-forward
+[33md252dc1[m HEAD@{13}: merge 98e9026d297fff3a889ecc9b422df945c36a5410: Merge made by the 'recursive' strategy.
+[33mddba615[m HEAD@{14}: commit: Updating Tableau assignments and projects to make them more clear and presentable.
+[33m819f9e5[m HEAD@{15}: commit: Updated Aspirin ANOVA project to fix a typo.
+[33m9c36d39[m HEAD@{16}: commit: Updates to STAT 602 seed classification project, updating powerpoint and whitepaper.
+[33m9def89b[m HEAD@{17}: commit: Updates and modifications to STAT 602 bean classification project.
+[33m918ab1d[m HEAD@{18}: commit: Updates to Powerpoint of STAT 601 Project 3 to add a sources page.
+[33mb4b2129[m HEAD@{19}: merge defcd2c37a0519f04672e4ce0e991ef524738c17: Merge made by the 'recursive' strategy.
+[33mb90e52e[m HEAD@{20}: commit: Typo and Title change of STAT 601 Aspirin comparison project.
+[33mda94b34[m HEAD@{21}: commit: Updates to make Aspiring Pill Anova STAT 601 Project more presentable by adding a powerpoint and pdf of the powerpoint.
+[33m65fa095[m HEAD@{22}: merge 65fa0955f3837728b776d7e319d702f258c34538: Fast-forward
+[33m0a5cdbb[m HEAD@{23}: commit: Updates to powerpoint presentations.
+[33mb9fb3be[m HEAD@{24}: commit: More powerpoint changes to STAT 601 files.
+[33mb134944[m HEAD@{25}: commit: Created some small updates to powerpoint presentations from stat 601 course.
+[33m85cadf2[m HEAD@{26}: commit: Fixed a grammar error in Quiz 1 in Excel.
+[33m5525d3b[m HEAD@{27}: merge 78be95b46130222217ceaf609a415b1f2b784f00: Merge made by the 'recursive' strategy.
+[33m774fa75[m HEAD@{28}: commit: Small updates to Excel formatting.
+[33mfb4c5a9[m HEAD@{29}: commit: Changes to Excel quiz 4 to better format a table and chart.
+[33mfeab8df[m HEAD@{30}: commit: Small formatting changes to quiz 4 of Excel section of portfolio.
+[33mfef72d3[m HEAD@{31}: merge fef72d367d5e9cbd3ef5d02525163f8cca621857: Fast-forward
+[33mfca3eaa[m HEAD@{32}: commit: Added Excel assignments to portfolio, showing use of charts, nested functions, and hybrid references.
+[33m4308baf[m HEAD@{33}: commit: Text adjustment in Stat 602 midterm
+[33m92f0bc5[m HEAD@{34}: commit: Fixed Typos in STAT 602 midterm
+[33me4ed923[m HEAD@{35}: commit: Updated Typos
+[33m1d54836[m HEAD@{36}: commit: Fixed some typos
+[33mad198b1[m HEAD@{37}: commit: Small updates to wording in projects
+[33mdc3c63f[m HEAD@{38}: commit: Updated some text of Hospital Multinomial Classification project report
+[33m87b598f[m HEAD@{39}: merge 887199a576309208661aa0d620f8f5e89d2d02aa: Merge made by the 'recursive' strategy.
+[33md9b650e[m[33m ([m[1;32mnewAddition[m[33m)[m HEAD@{40}: merge d9b650e961d504e89c57af13b56bdbeeb742a3b2: Fast-forward
+[33m7f73eb6[m HEAD@{41}: checkout: moving from newAddition to master
+[33md9b650e[m[33m ([m[1;32mnewAddition[m[33m)[m HEAD@{42}: commit: Removed old report copies
+[33m7f73eb6[m HEAD@{43}: merge 7f73eb6908799e42338b48fcec289927062ea8d9: Fast-forward
+[33m8bd2b48[m HEAD@{44}: checkout: moving from master to newAddition
+[33m7f73eb6[m HEAD@{45}: merge 9caa6b139b3b9ab43aceec40f71c2b6b905f164b: Merge made by the 'recursive' strategy.
+[33m8bd2b48[m HEAD@{46}: merge 8bd2b48e09bbb505ca57641aa079241ce7cadb6a: Fast-forward
+[33ma8cd62f[m HEAD@{47}: checkout: moving from newAddition to master
+[33m8bd2b48[m HEAD@{48}: commit: Updated Python Hospital Stay Length Project to change order of variable selection results.
+[33ma8cd62f[m HEAD@{49}: checkout: moving from master to newAddition
+[33ma8cd62f[m HEAD@{50}: checkout: moving from newAddition to master
+[33ma8cd62f[m HEAD@{51}: checkout: moving from master to newAddition
+[33ma8cd62f[m HEAD@{52}: checkout: moving from newAddition to master
+[33ma8cd62f[m HEAD@{53}: merge a8cd62fe4258b1f5b17e564b7a14d3bfff82f681: Fast-forward
+[33m440c60e[m HEAD@{54}: checkout: moving from master to newAddition
+[33ma8cd62f[m HEAD@{55}: merge 6d8be2dfe2fde1c995399169552f7373313838ea: Merge made by the 'recursive' strategy.
+[33m93c95b9[m HEAD@{56}: merge 440c60e16a0f8b0d7b059202787a87b3b077fb9e: Merge made by the 'recursive' strategy.
+[33m89ed911[m HEAD@{57}: checkout: moving from newAddition to master
+[33m440c60e[m HEAD@{58}: commit: Added some source files to Purchase Classification SAS project.
+[33m69ce76b[m[33m ([m[1;31morigin/newAddition[m[33m)[m HEAD@{59}: checkout: moving from master to newAddition
+[33m89ed911[m HEAD@{60}: merge 89ed911077fea20aa4fcd2d8b9dc348fc298e7c2: Fast-forward
+[33m4d6cc58[m HEAD@{61}: checkout: moving from newAddition to master
+[33m69ce76b[m[33m ([m[1;31morigin/newAddition[m[33m)[m HEAD@{62}: commit: Small text update to one of the SAS assignments.
+[33mde4c1e8[m HEAD@{63}: commit: Made major updates to the Predictive Analytics Group project, cleaning some of the code, standardizing feature names, fixing some of the dummy coding, and updating the variable selection.
+[33m4d6cc58[m HEAD@{64}: merge 4d6cc5886da906bbb119c13617bde05f2e40cc9e: Fast-forward
+[33m5889cbb[m HEAD@{65}: checkout: moving from master to newAddition
+[33m4d6cc58[m HEAD@{66}: commit: Fixed issues with Python Predictive Analytics Course Group project variable selection part being described incorrectly.
+[33m2667a2a[m HEAD@{67}: merge 2667a2a6f3dafdcc4156fb1b556f92c276601c10: Fast-forward
+[33m8f6052e[m HEAD@{68}: commit: Updated version number of Python multinomial classification group project
+[33mfb2683a[m HEAD@{69}: commit: Updated Multinomial Group project, fixing major typos and code issues.
+[33m1d89c98[m HEAD@{70}: merge 1d89c989849d31025d6ece2131fa3a5e3f5cf7c0: Fast-forward
+[33me1808d2[m HEAD@{71}: commit: Updated PowerBI Group Project to contribution to group project, isolating my work in it.
+[33mff798df[m HEAD@{72}: merge afb7f1bbc3bda8001b89386c04d6bd9ac102708c: Merge made by the 'recursive' strategy.
+[33mea09c87[m HEAD@{73}: merge 5889cbb18dd1dec1f16cc5b65cb2268144b50c26: Merge made by the 'recursive' strategy.
+[33m7f0db8c[m HEAD@{74}: checkout: moving from newAddition to master
+[33m5889cbb[m HEAD@{75}: commit: Made updates to INFS 762 SAS project, adding headers for better readability.
+[33mde99abb[m HEAD@{76}: checkout: moving from master to newAddition
+[33m7f0db8c[m HEAD@{77}: commit: Made updates to text in INFS 768 Python hospital stay group project.
+[33mde99abb[m HEAD@{78}: checkout: moving from newAddition to master
+[33mde99abb[m HEAD@{79}: merge de99abb85775522ce2d478f62db1d4e12e922716: Fast-forward
+[33m971e027[m HEAD@{80}: checkout: moving from master to newAddition
+[33mde99abb[m HEAD@{81}: merge de99abb85775522ce2d478f62db1d4e12e922716: Fast-forward
+[33m7c30095[m HEAD@{82}: checkout: moving from newAddition to master
+[33m971e027[m HEAD@{83}: commit: Updating Python Inference Group Project, adding in grid search for hyperparameter tuning.
+[33macad51f[m HEAD@{84}: checkout: moving from master to newAddition
+[33m7c30095[m HEAD@{85}: checkout: moving from newAddition to master
+[33macad51f[m HEAD@{86}: commit: Small adjustments to project 4 stat 601
+[33m30b9791[m HEAD@{87}: merge 7c30095fcfe3c4740a4014b719887ec2ebe4dee1: Merge made by the 'recursive' strategy.
+[33m876d35e[m HEAD@{88}: merge 5dc669dddaf0a31046af10d13e5ac04037b4b19e: Merge made by the 'recursive' strategy.
+[33mc9944c2[m HEAD@{89}: checkout: moving from master to newAddition
+[33m7c30095[m HEAD@{90}: merge 5dc669dddaf0a31046af10d13e5ac04037b4b19e: Merge made by the 'recursive' strategy.
+[33mc9944c2[m HEAD@{91}: merge c9944c2137e8eebb528f6f1359d558a753281ba3: Fast-forward
+[33me019b05[m HEAD@{92}: checkout: moving from newAddition to master
+[33mc9944c2[m HEAD@{93}: merge e019b05cb2d96b8a1414d089fbe188e4ce1603df: Merge made by the 'recursive' strategy.
+[33mfbcb549[m HEAD@{94}: commit: Adding 2 assignments to R Stat 601 based on:
+[33mc09ad06[m HEAD@{95}: checkout: moving from master to newAddition
+[33me019b05[m HEAD@{96}: checkout: moving from newAddition to master
+[33mc09ad06[m HEAD@{97}: revert: Revert "Adding 2 additional R assignments on Gaussian Mixture Models and Linear Mixed effects Models"
+[33m53a62cb[m HEAD@{98}: checkout: moving from master to newAddition
+[33me019b05[m HEAD@{99}: merge e019b05cb2d96b8a1414d089fbe188e4ce1603df: Fast-forward
+[33mb769141[m HEAD@{100}: commit: Comment updates to some assignments already in portfolio.
+[33m948b600[m HEAD@{101}: commit: Adding additional assignments to portfolio
+[33m73b2474[m HEAD@{102}: commit: Fixed typo in R typing project. pt. 2
+[33m9b6b2ff[m HEAD@{103}: merge 2bd9bc8d9bab7766f9ad87c162e5d65a9fedd022: Merge made by the 'recursive' strategy.
+[33m599e42a[m HEAD@{104}: commit: Fixed some typos in project outputs/presentations.
+[33m132a7f8[m HEAD@{105}: commit: Signed-off-by: crattik <ggunaward@gmail.com>
+[33m1de905e[m HEAD@{106}: merge 1de905e0ddaa421c78ca0059c6714b1feac91bf1: Fast-forward
+[33meb85015[m HEAD@{107}: commit: Added pdf of R Mixed Effects Model Analysis project powerpoint for display in portfolio
+[33m0c21263[m HEAD@{108}: merge 3077bf2f91f26150ffb489612de7dbeeaa6fd3eb: Merge made by the 'recursive' strategy.
+[33m1bb83f2[m HEAD@{109}: commit: Added pdf of STAT 602 Seed Classification Project Powerpoint for display in portfolio
+[33m8d07d1f[m HEAD@{110}: merge 8d07d1f3f262351240a0173b7ec05ca0a1314b82: Fast-forward
+[33mce11d40[m HEAD@{111}: merge a0249f357c005c3ac4890586ec063308a6ef2a4c: Merge made by the 'recursive' strategy.
+[33m18d6357[m HEAD@{112}: commit: Adding in a pdf code output file to R project 4
+[33m64d4b5f[m HEAD@{113}: commit: Adding output of mixed model R analysis
+[33m5f41d93[m HEAD@{114}: merge 5f41d93b8f9057ebd7752a7ac56a89a5883fd5f4: Fast-forward
+[33medcd5ba[m HEAD@{115}: merge edcd5ba18f51eddeed0e22b358ca76562d309f51: Fast-forward
+[33m1e4dff4[m HEAD@{116}: pull https://github.com/ggunaward/2022-Portfolio.git: Fast-forward
+[33m53a62cb[m HEAD@{117}: merge 53a62cbd174d2810034e50be3e4acb59831eac27: Fast-forward
+[33mf45e209[m HEAD@{118}: checkout: moving from newAddition to master
+[33m53a62cb[m HEAD@{119}: commit: Updates to Datawarehouse and PowerBI sections. Update to Readme.MD.
+[33mf45e209[m HEAD@{120}: checkout: moving from master to newAddition
+[33mf45e209[m HEAD@{121}: pull https://github.com/ggunaward/2022-Portfolio.git: Fast-forward
+[33m69da274[m HEAD@{122}: pull https://github.com/ggunaward/2022-Portfolio.git: Fast-forward
+[33me1b0a51[m HEAD@{123}: commit: Updated hadoop asignment 2 with header change
+[33m54eace8[m HEAD@{124}: 
