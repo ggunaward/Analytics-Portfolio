@@ -472,7 +472,7 @@ After removing the outliers, the dataset has been reduced from 3000 observations
 
 
 
-```{r}
+```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
 
 SeedDataNoOutliers.df <- SeedDataNoOutliers.df[2:9]
 maxObsTarget <- max(SeedCountsNoOutliers$Freq)
