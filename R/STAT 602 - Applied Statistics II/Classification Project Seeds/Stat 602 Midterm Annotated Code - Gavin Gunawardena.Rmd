@@ -467,11 +467,40 @@ for (var_ in unique(SeedDataLong.df$variable)) {
 
 
 ```
-After removing the outliers, the dataset has been reduced from 3000 observations to 2731 observations with 422 being the lowest amount of observations in a class. These outliers are visibly gone from the upper and lower limits of the box  plots as well as the tails of the histograms.
+After removing the outliers, the dataset has been reduced from 3000 observations to 2731 observations with 422 being the lowest amount of observations in a class. These outliers are visibly gone from the upper and lower limits of the box  plots as well as the tails of the histograms. Some indications of class imbalance are present though in SEKER and SIRA seed classes. Thus, here the minority classes are bolstered to the size of the majority class via oversampling with replacement.
+
+
+
+
+```{r}
+
+SeedDataNoOutliers.df <- SeedDataNoOutliers.df[2:9]
+maxObsTarget <- max(SeedCountsNoOutliers$Freq)
+tempFreqCount = 0
+#Loop through the various classes in the dataset
+for (class in SeedCountsNoOutliers$Class) 
+  {
+  # check if a class is less than the observations target of the highest observation class in the dataset
+  tempFreqCount = subset(SeedCountsNoOutliers, (Class == class), select = Freq)
+  if (tempFreqCount < maxObsTarget){
+  # if there aren't enough observations, add some via random walk oversampling
+    resample.df = sample_n(subset(SeedDataNoOutliers.df, (Class == class)), size = as.integer(maxObsTarget-tempFreqCount), replace = TRUE)
+
+    SeedDataNoOutliers.df<-union_all(resample.df,SeedDataNoOutliers.df)
+  }
+
+}
+
+print(SeedDataNoOutliers.df %>%
+  group_by(Class) %>%
+  summarize(Freq=n()))
+
+```
+
 # Predictive Analysis
 
 ## Numeric dependent variable conversion
-```{r echo=T, results='hide', warning=FALSE, fig.show='hide'} 
+```{r echo=T, fig.show='hide', warning=FALSE, results='hide'}
 #Suppress warnings
 options(warn=-1)
 #Update Dataset to have a numeric version of response variable via the  beanKey.df dataframe
