@@ -15,7 +15,7 @@ Showcase of projects and assignments I've completed as part of the MS in Analyti
 * Mixed Effects Models Typing Dynamics Project
   + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204_STAT_601%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
 * Employment Dataset Visualization Project
-  + [Tableau Public](https://public.tableau.com/app/profile/gavin4523/viz/FactorstoConsiderWhenTakingaJob-Storyboard/Story)
+  + [Tableau Public](https://public.tableau.com/app/profile/gavin4523/viz/FactorstoConsiderWhenTakingaJob-Full/Story)
   
 ### Python
 * Hopital Stay Length Multinomial Classification Project
@@ -80,7 +80,7 @@ Showcase of projects and assignments I've completed as part of the MS in Analyti
     - [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/SAS/STAT%20600%20-%20Statistical%20Programming/Assignment%209/Gavin.Gunawardena.9-SAS-code%20v1.1.sas)
 ### Tableau
 * Employment Dataset Project
-  + [Tableau Public](https://public.tableau.com/app/profile/gavin4523/viz/FactorstoConsiderWhenTakingaJob-Storyboard/Story)
+  + [Tableau Public](https://public.tableau.com/app/profile/gavin4523/viz/FactorstoConsiderWhenTakingaJob-Full/Story)
   + [Storyboard PDF](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments/Project%20-%20Storyboard%20-%20Gavin%20Gunawardena.pdf)
   + [Dashboard 1 PDF](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments/Project%20Dashboard%201%20-%20Gavin%20Gunawardena.pdf)
   + [Dashboard 2 PDF](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments/Project%20Dashboard%202%20-%20Gavin%20Gunawardena.pdf)
