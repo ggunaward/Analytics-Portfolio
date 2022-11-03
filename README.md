@@ -10,10 +10,13 @@ Showcase of projects and assignments I've completed as part of the MS in Analyti
   + [Report](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Project/Final%20Report%201.4.pdf)
 * Bean Classification Project
   + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Midterm%20Project%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
+  + [Other files](https://github.com/ggunaward/2022-Portfolio#r)
 * Variance Analysis of Aspirins Project
   + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_Powerpoint_Gavin_Gunawardena.pdf)
+  + [Other files](https://github.com/ggunaward/2022-Portfolio#r)
 * Mixed Effects Models Typing Dynamics Project
   + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204_STAT_601%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
+  + [Other files](https://github.com/ggunaward/2022-Portfolio#r)
 * Employment Dataset Visualization Project
   + [Tableau Public](https://public.tableau.com/app/profile/gavin4523/viz/FactorstoConsiderWhenTakingaJob-Full/Story)
   
