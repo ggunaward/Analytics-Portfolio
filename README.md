@@ -19,6 +19,9 @@ Showcase of projects and assignments I've completed as part of the MS in Analyti
   + [Other files](https://github.com/ggunaward/2022-Portfolio#r)
 * Employment Dataset Visualization Project
   + [Tableau Public](https://public.tableau.com/app/profile/gavin4523/viz/FactorstoConsiderWhenTakingaJob-Full/Story)
+* NEW 2023 Power BI dashboard/report on single family home sales completed for an interview assessment
+  + [PDF](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/Predictive%20Data%20Lab%20Assessment/Predictive%20Data%20Lab%20PowerBI%20Gavin%20G-merged.pdf)
+  + [Other files](https://github.com/ggunaward/2022-Portfolio/tree/master/Tableau_%26_PowerBI/Predictive%20Data%20Lab%20Assessment)
   
 ### Python
 * Hopital Stay Length Multinomial Classification Project
@@ -90,9 +93,9 @@ Showcase of projects and assignments I've completed as part of the MS in Analyti
   + [source](https://github.com/ggunaward/2022-Portfolio/tree/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments)
 * [Geographic Data Visualization Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments/Assignment%202%20-%20Gavin%20Gunawardena.pdf)
   + [source](https://github.com/ggunaward/2022-Portfolio/tree/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Assignments)
-### PowerBI
+### Power BI
 * [Individual Contribution to Instant Noodle Data Visualization Group Project](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/INFS%20776%20-%20Data%20Visualization/Final%20Project%20-%20Instant%20Noodle%20Data%20Visualization/Storyline%20-%20Instant%20Noodle%20Total%20Sales%20and%20Sales%20Growth.pdf)
-* [Data Warehouse Design and PowerBI Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%203%20-%20Gavin%20Gunawardena%20v1.0.pdf)
+* [Data Warehouse Design and Power BI Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%203%20-%20Gavin%20Gunawardena%20v1.0.pdf)
 ### Hadoop
 * MapReduce Assignments:
   + [Text Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Hadoop/INFS%20774%20-%20Big%20Data%20Analytics/Assignment%203/Assignment%203%20-%20Gavin%20Gunawardena.pdf)
@@ -102,7 +105,7 @@ Showcase of projects and assignments I've completed as part of the MS in Analyti
   + [Text Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20PySpark/INFS%20774%20-%20Big%20Data%20Analytics/avgwordlength_Gavin_Gunawardena.ipynb)
 ### Database design
 * [Operational Database Design Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%202%20-%20Gavin%20Gunawardena%20v1.pdf)
-* [Data Warehouse Design and PowerBI Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%203%20-%20Gavin%20Gunawardena%20v1.0.pdf)
+* [Data Warehouse Design and Power BI Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%203%20-%20Gavin%20Gunawardena%20v1.0.pdf)
 ### Excel
 * [K Nearest Neighbor Calculations and Visualization](https://www.dropbox.com/s/xcxlx1ugzxn45k4/Quiz%201.xlsx?dl=0)
   + [Mirror](https://github.com/ggunaward/2022-Portfolio/blob/master/Excel/INFS%20768%20-%20Predictive%20Analytics/Quizzes/Quiz%201.xlsx)
