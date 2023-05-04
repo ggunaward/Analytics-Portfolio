@@ -24,7 +24,7 @@ Showcase of projects and assignments I've completed as part of the MS in Analyti
   + [Other files](https://github.com/ggunaward/2022-Portfolio/tree/master/Tableau_%26_PowerBI/Predictive%20Data%20Lab%20Assessment)
   
 ### Python
-* Hopital Stay Length Multinomial Classification Project
+* Hospital Stay Length Multinomial Classification Project
   + [Jupyter Notebook](https://nbviewer.org/github/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Project/Milestone3_Var_Sel___Data_Mod_v1_6.ipynb)
   + [Report](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Project/Final%20Report%201.4.pdf)
   + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Project)
