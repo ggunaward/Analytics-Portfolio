@@ -19,7 +19,7 @@ Showcase of projects and assignments I've completed as part of the MS in Analyti
   + [Other files](https://github.com/ggunaward/2022-Portfolio#r)
 * Employment Dataset Visualization Project
   + [Tableau Public](https://public.tableau.com/app/profile/gavin4523/viz/FactorstoConsiderWhenTakingaJob-Full/Story)
-* NEW 2023 Power BI dashboard/report on single family home sales completed for an interview assessment
+* Power BI dashboard/report on single family home sales completed for a successful interview assessment
   + [PDF](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/Predictive%20Data%20Lab%20Assessment/Predictive%20Data%20Lab%20PowerBI%20Gavin%20G-merged.pdf)
   + [Other files](https://github.com/ggunaward/2022-Portfolio/tree/master/Tableau_%26_PowerBI/Predictive%20Data%20Lab%20Assessment)
   
