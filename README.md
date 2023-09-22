@@ -18,7 +18,7 @@ Showcase of projects and assignments I've completed as part of the MS in Analyti
   + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204_STAT_601%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
   + [Other files](https://github.com/ggunaward/2022-Portfolio#r)
 * Employment Dataset Visualization Project
-  + [Tableau Public](https://public.tableau.com/app/profile/gavin4523/viz/FactorstoConsiderWhenTakingaJob-Full/Story)
+  + [Tableau Public](https://public.tableau.com/app/profile/gavin4523/viz/FactorstoConsiderWhenTakingaJob-Full/Dashboard1)
 * Power BI dashboard/report on single family home sales completed for a successful interview assessment
   + [PDF](https://github.com/ggunaward/2022-Portfolio/blob/master/Tableau_%26_PowerBI/Predictive%20Data%20Lab%20Assessment/Predictive%20Data%20Lab%20PowerBI%20Gavin%20G-merged.pdf)
   + [Other files](https://github.com/ggunaward/2022-Portfolio/tree/master/Tableau_%26_PowerBI/Predictive%20Data%20Lab%20Assessment)
