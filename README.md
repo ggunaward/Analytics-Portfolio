@@ -2,20 +2,20 @@
 Showcase of projects and assignments I've completed as part of the MS in Analytics from Dakota State University. The portfolio is divided between languages/platforms and further divided by courses. This is best navigated through the links below as they lead to components of their respective projects/assignments that can be viewed through Github.
 
 ## Table of Contents:
-####  *Everything linked has been tested to work. If something doesn't load, which is common with the PDFs, just refresh the page and it should load.*
+####  *Everything linked has been tested to work. "If a PDF doesn’t load, refreshing the page should resolve the issue.*
 
 ### Highlighted Projects
-* Hopital Stay Length Multinomial Classification Project
+* Hospital Stay Length Multinomial Classification Project
   + [Jupyter Notebook](https://nbviewer.org/github/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Project/Milestone3_Var_Sel___Data_Mod_v1_6.ipynb)
   + [Report](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Project/Final%20Report%201.4.pdf)
 * Bean Classification Project
-  + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Midterm%20Project%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
+  + [PowerPoint Summarization with Visualization](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Midterm%20Project%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
   + [Other files](https://github.com/ggunaward/2022-Portfolio#r)
 * Variance Analysis of Aspirins Project
-  + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_Powerpoint_Gavin_Gunawardena.pdf)
+  + [PowerPoint Summarization with Visualization](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_Powerpoint_Gavin_Gunawardena.pdf)
   + [Other files](https://github.com/ggunaward/2022-Portfolio#r)
 * Mixed Effects Models Typing Dynamics Project
-  + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204_STAT_601%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
+  + [PowerPoint Summarization with Visualization](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204_STAT_601%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
   + [Other files](https://github.com/ggunaward/2022-Portfolio#r)
 * Tableau Data Profession Employment Exploratory Dashboards
   + [Tableau Public](https://public.tableau.com/app/profile/gavin4523/viz/FactorstoConsiderWhenTakingaJob-Full/Dashboard1)
@@ -30,7 +30,7 @@ Showcase of projects and assignments I've completed as part of the MS in Analyti
   + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/Jupyter_Notebooks%20-%20Python/INFS%20768%20-%20Predictive%20Analytics/Multinomial%20Classification%20Project)
 * [Classification Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Classification%20Assignment/770_hw1_Gunawardena.ipynb)
   + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Classification%20Assignment)
-* [Recommmender System Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Recommender%20System%20Assignment/770_hw2_Gunawardena.ipynb)
+* [Recommender System Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Recommender%20System%20Assignment/770_hw2_Gunawardena.ipynb)
   + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Recommender%20System%20Assignment)
 * [Social Network Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Social%20Network%20Analysis%20Assignment/770_hw5_gunawardena.ipynb)
   + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/Jupyter_Notebooks%20-%20Python/INFS%20770%20-%20Data%20Mining%20Applications/Social%20Network%20Analysis%20Assignment)
@@ -52,18 +52,18 @@ Showcase of projects and assignments I've completed as part of the MS in Analyti
   + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%201%20-%20Vole%20Classification/Project_1_Gavin_Gunawardena.Rmd)
   + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%201%20-%20Vole%20Classification)
 * Variance Analysis of Aspirins Project
-  + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_Powerpoint_Gavin_Gunawardena.pdf)
+  + [PowerPoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_Powerpoint_Gavin_Gunawardena.pdf)
   + [White Paper with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_v1_Gavin_Gunawardena.pdf) 
   + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins/Project_3_Gavin_Gunawardena.Rmd)
   + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%203%20-%20Variance%20Analysis%20Aspirins)
-* Mixed Effects Models Typing Dynamics Project
-  + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204_STAT_601%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
+* Mixed-Effects Models Typing Dynamics Project
+  + [PowerPoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204_STAT_601%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
   + [White Paper](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204%20White%20Paper%20-%20Gavin%20Gunawardena.pdf) 
   + [Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project%204%20Code%20Output.pdf)
   + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics/Project_4_Gavin_Gunawardena.Rmd)
   + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/R/STAT%20601%20-%20Applied%20Statistics%20I/Project%204%20-%20Mixed%20Effects%20Model%20Analysis%20Typing%20Dynamics)
 * Bean Classification Project
-  + [Powerpoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Midterm%20Project%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
+  + [PowerPoint Summarization with Visualizations](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Midterm%20Project%20Powerpoint%20-%20Gavin%20Gunawardena.pdf)
   + [White Paper](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Midterm%20Project%20-%20Gavin%20Gunawardena.pdf) 
   + [Source Code](https://github.com/ggunaward/2022-Portfolio/blob/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds/Stat%20602%20Midterm%20-%20Gavin%20Gunawardena.Rmd)
   + [Source Directory](https://github.com/ggunaward/2022-Portfolio/tree/master/R/STAT%20602%20-%20Applied%20Statistics%20II/Classification%20Project%20Seeds)
@@ -104,7 +104,7 @@ Showcase of projects and assignments I've completed as part of the MS in Analyti
   + [Classification Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20PySpark/INFS%20774%20-%20Big%20Data%20Analytics/Assign5%20-%20Gavin%20Gunawardena.ipynb)
   + [Text Analysis Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Jupyter_Notebooks%20-%20PySpark/INFS%20774%20-%20Big%20Data%20Analytics/avgwordlength_Gavin_Gunawardena.ipynb)
 ### Database design
-* [Operational Database Design Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%202%20-%20Gavin%20Gunawardena%20v1.pdf)
+* [Operational Database Design Assignment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%202%20-%20Gavin%20Gunawardena%20v1.pdf)
 * [Data Warehouse Design and Power BI Assigment](https://github.com/ggunaward/2022-Portfolio/blob/master/Data%20Warehouse%20and%20OLTP%20design/INFS%20762%20-%20Data%20Warehousing%20and%20Mining/Assignment%203%20-%20Gavin%20Gunawardena%20v1.0.pdf)
 ### Excel
 * [K Nearest Neighbor Calculations and Visualization](https://www.dropbox.com/s/xcxlx1ugzxn45k4/Quiz%201.xlsx?dl=0)
